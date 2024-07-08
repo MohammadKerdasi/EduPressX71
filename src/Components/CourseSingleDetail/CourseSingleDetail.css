@@ -76,7 +76,7 @@
   {
     display: flex;
     justify-content: space-between;
-    padding: 30px 74.5px;
+    padding: 30px 70.5px;
     gap: 10px;
   }
   .Mk-CardBtn
@@ -191,11 +191,18 @@
   justify-content: flex-start;
   flex-direction: row;
   margin-bottom: 20px;
+
 }
 .Mk-40Rating h1 
 {
   font-size: 36px;
   padding: 0;
+}
+.Mk-CountUp40
+{
+  display: block;
+  font-size: 30px;
+
 }
 .Mk-Stars
 {

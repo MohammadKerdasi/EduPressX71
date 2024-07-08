@@ -646,14 +646,13 @@ const Reviews = ({ comments,   }) => {
 
   return (
     <>
-     <h4 className="Mk-ReviewsHeading">Comments</h4>
+        <h4 className="Mk-ReviewsHeading">Comments</h4>
       <div className="Mk-40Rating">
         {/* Use CountUp for animated rating value */}
-        <CountUp start={0} end={4.0} decimals={1} duration={1}>
-          {({ countUpRef }) => (
-            <h1 ref={countUpRef} />
-          )}
-        </CountUp>
+        <h1>
+
+          <CountUp className="Mk-CountUp40" start={0} end={4.0} decimals={1} duration={2} />
+        </h1>
         <div className="Mk-StarsRatings">
           <div className="Mk-Stars">
             <img style={{ width: "18px" }} src={filled_star} alt="star" />
@@ -664,7 +663,8 @@ const Reviews = ({ comments,   }) => {
           </div>
           <p>
             based on{' '}
-            <CountUp className="Mk-CountUp"  start={0} end={146951} duration={2} separator="," />
+            {/* Use CountUp for animated ratings count */}
+            <CountUp className="Mk-CountUp" start={0} end={146951} duration={2} separator="," />
             {' '}ratings
           </p>
         </div>
@@ -681,11 +681,10 @@ const Reviews = ({ comments,   }) => {
               />
             ))}
           </span>
-          <CountUp start={0} end={percentage} duration={2} suffix="%">
-            {({ countUpRef }) => (
-              <span className="Mk-NumOfRate" ref={countUpRef} />
-            )}
-          </CountUp>
+          {/* Use CountUp for animated percentage with % */}
+          <span className="Mk-NumOfRate">
+            <CountUp start={0} end={percentage} duration={1} suffix="%" />
+          </span>
           <div className="Mk-RatingBar">
             <div
               className="Mk-RatingBarInner"
@@ -695,6 +694,14 @@ const Reviews = ({ comments,   }) => {
         </div>
       ))}
 
+      <div className="SHaaban-comment-section Mk-CommentSection">
+        {currentComments.map((comment) => (
+          <Comment
+            key={comment.id}
+            comment={comment}
+          />
+        ))}
+      </div>
       <div className="SHaaban-comment-section Mk-CommentSection">
         {currentComments.map((comment) => (
           <Comment
