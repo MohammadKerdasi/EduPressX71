@@ -1,4 +1,4 @@
-.anything
+/* .anything
 {
   border-radius: 5px;
 }
@@ -174,14 +174,14 @@ color: var(--main-color);
   .Mk-AccordionTitle 
   {
     font-size: 10PX;
-  }
+  } */
 
   /* .Mk-AccordionTitle
   {
     font-size: 12px;
   } */
 
-}
+/* }
 @media (max-width:500px){
   .Mk-AccordionUl li span 
   {
@@ -191,4 +191,4 @@ color: var(--main-color);
   {
     font-size: 10px !important;
   }
-}
+} */

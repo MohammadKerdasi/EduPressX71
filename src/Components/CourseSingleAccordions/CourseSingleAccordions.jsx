@@ -15,7 +15,10 @@ const Accordion = ({ title, subTitle, subTitle2, children }) => {
   }, [isOpen]);
 
   return (
+    <>
+       
     <div className="Mk-accordion">
+   
       <div className="Mk-accordion-titleAndSub" onClick={() => setIsOpen(!isOpen)}>
         <div className={`Mk-AccordionTitle ${isOpen ? 'open' : ''}`} >
           <img
@@ -33,7 +36,9 @@ const Accordion = ({ title, subTitle, subTitle2, children }) => {
       <div ref={contentRef} className={`Mk-accordion-content ${isOpen ? 'open' : ''}`}>
         {children}
       </div>
+
     </div>
+    </>
   );
 };
 
