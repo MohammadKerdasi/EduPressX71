@@ -8,6 +8,7 @@ import "./CourseSingleDetail.css";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import Accordion from "./../CourseSingleAccordions/CourseSingleAccordions.jsx";
+import './../CourseSingleAccordions/CourseSingleAccordions.css'
 import Lesson_Icon from "./../../../public/assetsProject/imges/lesson.png";
 import Right_sign from "./../../../public/assetsProject/imges/rightsign.svg";
 import lock_sign from "./../../../public/assetsProject/imges/lock.svg";
@@ -65,7 +66,7 @@ const Overview = () => {
 const Curriculum = () => {
   return (
     <div>
-      <p className="Mk-OverViewP">
+      {/* <p className="Mk-OverViewP">
         LearnPress is a comprehensive WordPress LMS Plugin for WordPress. This
         is one of the best WordPress LMS Plugins which can be used to easily
         create & sell courses online.
@@ -455,7 +456,10 @@ const Curriculum = () => {
             </div>
           </li>
         </ul>
-      </Accordion>
+      </Accordion> */}
+      <Accordion/>
+      <Accordion/>
+      <Accordion/>
     </div>
   );
 };
