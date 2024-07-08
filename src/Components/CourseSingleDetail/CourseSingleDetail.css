@@ -1,0 +1,593 @@
+.Mk-CourseSingleTabsAndCard
+{
+  display: flex;
+  justify-content: space-between;
+ gap: 30px; 
+}
+.Mk-CommentsAndTabs
+{
+  width: 65%;
+  border-radius: 20px 20px 0px 0px;
+}
+.Mk-tabs {
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+    
+  }
+  
+  .Mk-tab-headers {
+    display: flex;
+    cursor: pointer;
+    margin-bottom:0px;
+    
+  }
+  
+  .Mk-tab-header {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: var(--Title);
+    padding: 10px 20px;
+    text-align: center;
+    background-color: var(--white);
+    border: 1px solid var(--light-gray);
+    border-bottom: none;
+    transition: background-color 0.3s;
+    
+  }
+  
+  .Mk-tab-header:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .Mk-tab-header.active {
+    background-color: var(--white-grey);
+    color: var(--main-color);
+  }
+  .Mk-tab-header:last-child
+  {
+    border-radius: 0px 20px 0px 0px;
+  }
+  .Mk-tab-header:first-child
+  {
+    border-radius: 20px 0px 0px 0px;
+  }
+  
+  .Mk-tab-body {
+    border: 1px solid var(--light-gray);
+    background-color: var(--white-grey);
+    padding: 30px;
+  }
+  .Mk-CourseSingleCard
+  {
+    width: 35%;
+    position: relative;
+    
+  }
+  .Mk-CardStyling
+  {
+    position: absolute;
+    width: 100%;
+    top: -300px;
+    border-radius: 20px;
+    border: 1px solid var(--light-gray);
+  }
+  .Mk-CardBody
+  {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 74.5px;
+    gap: 10px;
+  }
+  .Mk-CardBtn
+  {
+    padding: 10px 24px;
+  }
+  .Mk-CardText
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 73.9px;
+  }
+  .Mk-CardText span 
+  {
+    margin: 0%;
+    font-size: 11.3px;
+    text-decoration: line-through;
+  }
+  .Mk-CardText h4
+  {
+    font-size: 16.2px;
+    margin: 0px 0px 0px 3px;
+    color: red;
+  } 
+  .Mk-CardBtn
+  {
+    width: 127px !important;
+    height: 48;
+    border-radius: 24px;
+    background-color: var(--main-color);
+    padding: 10px 24px;
+    border: 1px solid var(--main-color);
+  }
+  .Mk-CardBtn:hover
+  {
+    background-color: black;
+    border: 1px solid black;
+  }
+
+  .Mk-course-single-img
+  {
+    width: 128.06px;
+  }
+  .Mk-instructor-contact
+  {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: start;
+  }
+  .Mk-instructor-contact h4 
+  {
+    font-size:14.2px ;
+    font-weight: 600;
+    margin-bottom: 12px;
+  }
+  .Mk-instructor-contact p 
+  {
+    margin: 0;
+    color: var(--dark-grey);
+    font-size: 13px;
+  }
+  .Mk-ThimPressUl ul
+  {
+    margin-top:8px ;
+    padding: 0;
+  }
+  .Mk-Instructor-Li
+  {
+    list-style: none;
+    padding: 0;
+  }
+  .Mk-Instructor-Li span
+{
+    font-size: 12px ;
+    margin-left: 5.33px;
+}
+.Mk-LearnPress-p
+{
+  font-size: 13px;
+  color: var(--dark-grey);
+}
+.Mk-LinksLearnPress span
+{
+  font-size: 13px;
+}
+.Mk-Links
+{
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Mk-Links a :hover
+{
+  color: var(--main-color);
+}
+.Mk-ReviewsHeading  
+{
+  font-size: 20px !important ;
+  margin: 0%;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.Mk-40Rating
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.Mk-40Rating h1 
+{
+  font-size: 36px;
+  padding: 0;
+}
+.Mk-Stars
+{
+  display: flex;
+  gap: 1px;
+}
+.Mk-StarsRatings
+{
+  display: flex;
+  flex-direction: column;
+  margin-left:12px ;
+  gap: 5px;
+
+}
+.Mk-StarsRatings p 
+{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+.Mk-Starswidth
+{
+  width: 13px;
+  margin-right: 3px;
+}
+.Mk-NumOfRate
+{
+  width: 50px;
+  margin-left: 8px;
+  font-size: 16px;
+  
+}
+.Mk-Stars-2
+{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.Mk-Rating
+{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  
+}
+.Mk-RatingBar {
+  width: 100%;
+  height: 10px; 
+  background-color: #eaeaea;
+  margin-left: 10px;
+  
+}
+.Mk-RatingBarInner {
+  height: 100%;
+  background-color: var(--orange);
+  
+  
+}
+.Mk-Comments
+{
+  width: 100% !important;
+}
+.Mk-ReplayIconMargin
+{
+  margin: 10px 0px !important;
+}
+.Mk-Inputs
+{
+  width: 100% !important;
+}
+.Mk-formInputs
+{
+  margin-top: 30px!important;
+}
+.Mk-FormInput1
+{
+  width: 48%;
+  height: 48px;
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+}
+.Mk-FormInput1::placeholder
+{
+  padding: 10.5px 16px ;
+}
+.Mk-FormInput2
+{
+  width: 48%;
+  height: 48px;
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+}
+.Mk-FormInput2::placeholder
+{
+  padding: 10.5px 16px ;
+}
+.Mk-FormArea
+{
+  margin-top: 40px;
+  width: 63.5%;
+  
+}
+.Mk-InputsArea
+{
+  width: 65% !important;
+}
+.Mk-CommentSection
+{
+  margin: 20px 0px;
+}
+.reviews-container {
+  margin: 20px 0;
+  padding: 10px;
+}
+.Mk-PaginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.Mk-PaginationButton {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid var(--light-gray);
+  background-color: transparent;
+  cursor: pointer;
+  border-radius: 24px ;
+  width: 48px;
+  height: 48px;
+}
+
+.Mk-PaginationButton:disabled {
+
+  cursor: not-allowed;
+}
+
+.Mk-PaginationPageNumber {
+  padding: 5px 10px;
+  margin: 5px 5px;
+  border: 1px solid var(--light-gray);
+  cursor: pointer;
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s ease-in-out;
+}
+.Mk-PaginationPageNumber:hover
+{
+  background-color: #000;
+  color: #fff;
+}
+
+.Mk-ActivePage {
+  background-color: #000;
+  color: #fff;
+}
+.Mk-CommentContent
+{
+  font-size: 12.7px !important;
+  line-height: 20px !important;
+}
+.Mk-CommentDate
+{
+  font-size: 15px ;
+}
+.Mk-ReplayP
+{
+  font-size: 15px;
+}
+
+@media (max-width:1521px){
+  .Mk-CardBody
+  {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1344px){
+  .Mk-CourseSingleTabsAndCard
+  {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .Mk-CardStyling
+  {
+    position: static;
+    flex-direction: row;
+  }
+  .Mk-CourseSingleCard
+  {
+    width: max-content;
+  }
+  .Mk-CommentsAndTabs
+  {
+    width: 100%;
+  }
+  .Mk-CardBody
+  {
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20px ;
+  }
+  .Mk-FormArea
+  {
+    width: 100%;
+  }
+  .Mk-formInputs
+  {
+    flex-direction: column;
+  }
+  .Mk-FormInput1
+  {
+    width: 100% !important;
+    height: 48px !important;
+
+  }
+  .Mk-FormInput2
+  {
+    margin-top: 20px !important;
+    width: 100% !important;
+    height: 48px !important;
+
+  }
+  
+
+
+}
+@media (max-width: 848px){
+  .Mk-CardBody
+  {
+   flex-direction: row;
+   padding: 30px;
+  }
+  .Mk-CardStyling
+  {
+    flex-direction: column;
+  }
+  .Mk-CardText
+  {
+    margin: 0px;
+  }
+  .Mk-CourseSingleCard
+  {
+    width: 100%;
+  }
+ 
+  .Mk-tab-header
+  {
+    flex-wrap: nowrap;
+    font-size: 10px;
+  }
+
+}
+  @media (max-width: 768px) {
+
+    .Mk-tab-header {
+      flex: 100%;
+      border-right: none;
+      border-left: none;
+    }
+    .Mk-flex-direction
+    {
+      flex-direction: column;
+    }
+    .Mk-DateAndUserName
+    {
+      margin: 5px 0px;
+    }
+    .Mk-DateAndUserName p
+    {
+      font-size: 13px;
+    }
+    .Mk-NumOfRate
+    {
+      width: 60px;
+    }
+    .Mk-tab-header
+    {
+      flex-wrap: nowrap;
+      font-size: 10px;
+      padding: 10px 5px;
+    }
+ 
+    
+  }
+  
+  @media (max-width: 480px) {
+    .Mk-CheckBoxandP
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .Mk-tab-header {
+      padding: 10px 5px;
+    }
+  
+    .Mk-tab-body {
+      padding: 15px;
+    }
+    .Mk-CardBody
+    {
+     flex-direction: row;
+     padding: 10px;
+    }
+    .Mk-CardBtn
+    {
+      width: max-content;
+    }
+    .Mk-SingleCourseQuestion
+    {
+      padding: 10px !important;
+    }
+    .Mk-SingleCorseFAQs-set:first-child
+    {
+      margin-bottom: 0 !important;
+    }
+    .Mk-NumOfRate
+    {
+      width: 60px;
+    }
+    .Mk-tab-header
+    {
+      flex-wrap: nowrap;
+      font-size: 9px;
+    }
+    .Mk-PaginationButton
+    {
+      width: 30px;
+      height: 30px;
+    }
+    .Mk-PaginationPageNumber
+    {
+      width: 30px;
+      height: 30px
+    }
+    .Mk-AddingFlex{
+      flex-direction: column;
+    }
+    .Mk-CommentContent
+    {
+      margin: 10px 0px;
+    }
+  
+  }
+  @media (max-width:440px){
+    .Mk-CheckBoxandP
+    {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .Mk-OverViewP
+    {
+      font-size: 10px;
+    }
+    .Mk-SingleCourseAnswer p 
+    {
+      font-size: 10px !important;
+      padding: 10px 10px !important;
+    }
+    .Mk-StarsRatings p 
+    {
+      font-size: 10px;
+    }
+  }
+  
+  @media (max-width:434px){
+    .Mk-CheckBoxReview
+    {
+      margin-bottom: 20px;
+    }
+  }
+  @media (max-width: 350px){
+    .Mk-NumOfRate
+    {
+      width: 80px;
+    }
+    .Mk-tab-header
+    {
+      flex-wrap: nowrap;
+      font-size: 8px;
+    }
+  }
+    /* .Mk-CommentContent, .Mk-CommentUsername , .Mk-CommentDate
+    {
+      font-size: 10px !important;
+    } 

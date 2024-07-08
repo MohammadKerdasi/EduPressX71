@@ -1,0 +1,309 @@
+.NA-ExploreCourses {
+  background-image: url("./../../../public/assetsProject/imges/banner.png");
+  background-size: cover;
+  border-radius: 20px;
+  width: 100%;
+  /* min-height: 324px; */
+  position: relative;
+  overflow: hidden;
+}
+.NA-ExploreCourses-text {
+  width: 500px;
+  padding: 54.5px 0 54.5px 50px;
+  z-index: 3;
+}
+.NA-ExploreCourses-text h3 {
+  font-size: 32px;
+  margin-bottom: 24px;
+  text-transform: capitalize;
+  color: black;
+}
+.NA-ExploreCourses-text .NA-ExploreCourses-subtitle {
+  margin-bottom: 16px;
+}
+.NA-ExploreCourses-text p {
+  color: var(--dark-grey);
+}
+.NA-ExploreCourses-text .NA-ExploreCourses-desc {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.NA-banner {
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+.NA-bannerGreen {
+  width: 6.9%;
+  bottom: 3%;
+  right: 29%;
+  animation-duration: 5s;
+}
+.NA-bannerPurple {
+  width: 9%;
+  bottom: 0;
+  right: 14%;
+  animation-duration: 4s;
+}
+.NA-bannerPink {
+  width: 5.43%;
+  top: 57%;
+  left: 45.3%;
+  animation-duration: 4s;
+}
+.NA-bannerBabyblue {
+  width: 8.84%;
+  right: 18%;
+  top: 17%;
+  animation-duration: 6s;
+}
+.NA-bannerYellow {
+  width: 6.9%;
+  right: 24%;
+  top: 43%;
+  animation-duration: 3s;
+}
+.NA-bannerDarkpurple {
+  width: 9%;
+  top: 26%;
+  left: 45%;
+  animation-duration: 5s;
+}
+.NA-bannerRed {
+  width: 10.55%;
+  bottom: 12%;
+  right: 0;
+  animation-duration: 3s;
+}
+.NA-bannerOrange {
+  width: 5.9%;
+  top: 0;
+  right: 10%;
+  animation-duration: 5s;
+}
+.NA-bannerBlue {
+  width: 9.62%;
+  top: 14%;
+  left: 56%;
+}
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+/* large screen */
+@media (min-width: 993px) and (max-width: 1566px) {  /*1600px maximum*/
+  .NA-ExploreCourses-text {
+    width: 400px;
+    padding: 32px 0 32px 45px;
+  }
+  .NA-ExploreCourses-text h3 {
+    font-size: 27px;
+    margin-bottom: 16px;
+  }
+  .NA-ExploreCourses-text .NA-ExploreCourses-subtitle {
+    margin-bottom: 14px;
+    font-size: 13px;
+  }
+  .NA-ExploreCourses-text .NA-ExploreCourses-desc {
+    font-size: 14px;
+  }
+
+  .NA-bannerGreen {
+    right: 23%;
+  }
+  .NA-bannerPurple {
+    right: 5%;
+  }
+  .NA-bannerPink {
+    left: 60%;
+  }
+  .NA-bannerBabyblue {
+    right: 13%;
+  }
+  .NA-bannerYellow {
+    right: 18%;
+    top: 54%;
+  }
+  .NA-bannerDarkpurple {
+    left: 56%;
+    top: 18%;
+  }
+  .NA-bannerRed {
+    bottom: 30%;
+  }
+  .NA-bannerOrange {
+    right: 9%;
+  }
+  .NA-bannerBlue {
+    left: 66%;
+  }
+}
+
+/* medium screen */
+@media (min-width: 769px) and (max-width: 992px) {
+  .NA-ExploreCourses-text {
+    width: 300px;
+    padding: 32px 0 32px 40px;
+    
+  }
+  .NA-ExploreCourses-text h3 {
+    font-size: 20px;
+    margin-bottom: 14px;
+  }
+  .NA-ExploreCourses-text .NA-ExploreCourses-subtitle {
+    margin-bottom: 14px;
+    font-size: 11px;
+  }
+  .NA-ExploreCourses-text .NA-ExploreCourses-desc {
+    font-size: 11px;
+  }
+  .NA-bannerGreen {
+    right: 20%;
+  }
+  .NA-bannerPurple {
+    right: 5%;
+  }
+  .NA-bannerPink {
+    left: 63%;
+  }
+  .NA-bannerBabyblue {
+    right: 13%;
+    top: 23%;
+  }
+  .NA-bannerYellow {
+    right: 18%;
+    top: 54%;
+  }
+  .NA-bannerDarkpurple {
+    left: 56%;
+    top: 30%;
+  }
+  .NA-bannerRed {
+    bottom: 30%;
+  }
+  .NA-bannerOrange {
+    right: 4%;
+  }
+  .NA-bannerBlue {
+    left: 66%;
+  }
+}
+
+/* small screen */
+@media (min-width: 577px) and (max-width: 768px) {
+  .NA-ExploreCourses-text {
+    width: 300px;
+    padding: 30px 0 30px 30px;
+  }
+  .NA-ExploreCourses-text h3 {
+    font-size: 23px;
+    margin-bottom: 14px;
+  }
+  .NA-ExploreCourses-text .NA-ExploreCourses-subtitle {
+    margin-bottom: 14px;
+    font-size: 11px;
+  }
+  .NA-ExploreCourses-text .NA-ExploreCourses-desc {
+    font-size: 11px;
+  }
+  .NA-bannerGreen {
+    right: 20%;
+  }
+  .NA-bannerPurple {
+    right: 5%;
+  }
+  .NA-bannerPink {
+    left: 63%;
+  }
+  .NA-bannerBabyblue {
+    right: 13%;
+    top: 23%;
+  }
+  .NA-bannerYellow {
+    right: 18%;
+    top: 54%;
+  }
+  .NA-bannerDarkpurple {
+    left: 61%;
+    top: 32%;
+  }
+  .NA-bannerRed {
+    bottom: 30%;
+  }
+  .NA-bannerOrange {
+    right: 9%;
+  }
+  .NA-bannerBlue {
+    left: 66%;
+    top: 12%;
+  }
+}
+
+
+/* mobile screen */
+@media (min-width: 200px) and (max-width: 576px) {
+  .NA-ExploreCourses-text {
+    width: fit-content;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .NA-ExploreCourses-text h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .NA-ExploreCourses-text .NA-ExploreCourses-subtitle {
+    margin-bottom: 10px;
+    font-size: 10px;
+  }
+  .NA-ExploreCourses-text .NA-ExploreCourses-desc {
+    font-size: 10px;
+    margin-bottom: 14px
+  }
+  .NA-bannerGreen {
+    right: 80%;
+    bottom: 11%;
+  }
+  .NA-bannerPurple {
+    display: none;
+  }
+  .NA-bannerPink {
+    left: 2%;
+    top: 65%;
+  }
+  .NA-bannerBabyblue {
+    right: 13%;
+    top: 14%;
+}
+  
+  .NA-bannerYellow {
+    right: 18%;
+    top: 73%;
+  }
+  .NA-bannerDarkpurple {
+    left: 90%;
+    top: 79%;
+  }
+  .NA-bannerRed {
+    bottom: 58%;;
+  }
+  .NA-bannerOrange {
+    display: none;
+  }
+  .NA-bannerBlue {
+    left: 5%;
+    top: 22%;
+  }
+}

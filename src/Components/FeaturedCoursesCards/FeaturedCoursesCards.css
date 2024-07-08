@@ -1,0 +1,297 @@
+/* nahla */
+.NA-featuredCards {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.NA-feature-card {
+  width: 410px;
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid var(--light-gray);
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.NA-feature-card:hover .NA-card-title {
+  color: var(--main-color);
+}
+.NA-feature-card-img {
+  position: relative;
+  width: 100%;
+}
+.NA-feature-card .NA-feature-card-img img {
+  width: 100%;
+}
+.NA-feature-card .NA-feature-card-content {
+  padding: 20px;
+}
+.NA-feature-card .NA-feature-card-content > div .NA-card-desc {
+  margin-bottom: 12px;
+  color: var(--dark-grey);
+}
+.NA-feature-card .NA-feature-card-content > div:nth-child(1)  {
+  padding-bottom: 16px;
+  height: 138px;
+}
+.NA-card-desc span {
+  color: black;
+}
+.NA-feature-card .NA-feature-card-content > div .NA-card-title {
+  font-size: 20px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: 0.3s;
+}
+.NA-card-note {
+  position: absolute;
+  width: 114px;
+  /* height: 40px; */
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
+  top: 8%;
+  left: 5%;
+  margin-bottom: 0; /*Taking off bootstrap margin*/
+}
+.NA-feature-card:hover {
+  box-shadow: 0px 4px 20px 0px #0000001A;
+  margin: 0 0 16px 0 !important;
+}
+.NA-flex {
+  display: flex;
+}
+.NA-feature-card-deatails div {
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}
+.NA-feature-card-deatails .NA-icon {
+  color: var(--main-color);
+  margin-right: 8px;
+  height: 16px;
+}
+.NA-icon-desc {
+  height: 22px;
+  text-transform: capitalize;
+  color: var(--dark-grey);
+}
+.NA-feature-card .NA-d-none {
+  display: none !important;
+}
+.NA-card-price {
+  border-top: 1px solid #eaeaea;
+  padding-top: 16px;
+  justify-content: space-between;
+}
+.NA-card-price span,
+.NA-card-price .discount,
+.NA-card-price .free {
+  font-size: 18px;
+}
+.NA-card-price span {
+  text-decoration: line-through;
+  color: var(--grey);
+}
+.NA-card-price > div p {
+  margin: 0 0 0 8px;
+}
+.NA-card-price .discount,
+.NA-card-price .free {
+  font-weight: 500;
+}
+.NA-card-price .discount {
+  color: var(--red);
+}
+.NA-card-price .free {
+  color: var(--green);
+}
+.NA-feature-card .NA-card-price a {
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.NA-feature-card .NA-card-price a:hover, .NA-feature-card .NA-card-price a:focus {
+  text-decoration: underline !important;
+}
+
+/* nahla */
+/* large screen */
+@media (min-width: 993px) and (max-width: 1500px) {
+  .NA-feature-card {
+    width: 320px !important;
+  }
+  .NA-feature-card-content {
+    padding: 15px !important;
+  }
+  .NA-feature-card-content > div:nth-child(1) {
+    padding-bottom: 14px !important;
+  }
+  .NA-feature-card-content > div .NA-card-title {
+    font-size: 18px !important;
+  }
+  .NA-feature-card-content > div .NA-card-desc {
+    margin-bottom: 10px !important;
+    font-size: 14px !important;
+  }
+  .NA-card-desc span {
+    font-size: 14px !important;
+  }
+  .NA-icon-desc {
+    font-size: 14px !important;
+  }
+  .NA-card-price {
+    padding-top: 12px !important;
+  }
+  .NA-card-price span,
+  .NA-card-price .discount,
+  .NA-card-price .free,
+  .NA-card-price a {
+    font-size: 16px !important;
+  }
+  .NA-card-note {
+    width: auto !important;
+    padding: 6px 10px !important;
+    font-size: 14px !important;
+  }
+}
+
+/* medium screen */
+@media (min-width: 769px) and (max-width: 992px) {
+  .NA-featuredCards {
+    justify-content: center;
+    gap: 30px;
+  }
+  .NA-feature-card {
+    width:280px !important;
+  }
+  .NA-feature-card-content {
+    padding: 15px;
+  }
+    .NA-feature-card-content > div:nth-child(1) {
+      padding-bottom: 12px;
+      height: 120px;
+  }
+  .NA-feature-card-content > div .NA-card-title {
+    font-size: 16px;
+  }
+  .NA-feature-card-content > div .NA-card-desc {
+    margin-bottom: 10px;
+    font-size: 12px;
+  }
+  .NA-card-desc span {
+    font-size: 12px;
+  }
+  .NA-icon-desc {
+    font-size: 12px;
+  }
+  .NA-card-price {
+    padding-top: 10px;
+  }
+  .NA-card-price span,
+  .NA-card-price .discount,
+  .NA-card-price .free,
+  .NA-card-price a {
+    font-size: 14px;
+  }
+  .NA-card-note {
+    width: auto;
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}
+
+/* small screen */
+@media (min-width: 577px) and (max-width: 768px) {
+  .NA-featuredCards {
+    gap: 30px;
+    justify-content: center;
+  }
+  .NA-feature-card {
+    width: 280px !important;
+  }
+  .NA-feature-card-content {
+    padding: 15px;
+  }
+    .NA-feature-card-content > div:nth-child(1) {
+      padding-bottom: 12px !important;
+      height: 120px !important;
+  }
+  .NA-feature-card-content > div .NA-card-title {
+    font-size: 16px !important;
+  }
+  .NA-feature-card-content > div .NA-card-desc {
+    margin-bottom: 10px !important;
+    font-size: 12px !important;
+  }
+  .NA-card-desc span {
+    font-size: 12px !important;
+  }
+  .NA-icon-desc {
+    font-size: 12px !important;
+  }
+  .NA-card-price {
+    padding-top: 10px !important;
+  }
+  .NA-card-price span,
+  .NA-card-price .discount,
+  .NA-card-price .free,
+  .NA-card-price a {
+    font-size: 14px !important;
+  }
+  .NA-card-note {
+    width: auto !important;
+    padding: 6px 8px !important;
+    font-size: 12px !important;
+  }
+}
+
+/* mobile screen */
+@media (min-width: 200px) and (max-width: 576px) {
+  .NA-featuredCards {
+    justify-content: center;
+  }
+  .NA-feature-card {
+    width: 340px !important;
+  }
+  .NA-feature-card-content {
+    padding: 10px;
+  }
+    .NA-feature-card-content > div:nth-child(1) {
+      height: 115px !important;
+  }
+  .NA-feature-card-content > div .NA-card-title {
+    font-size: 16px !important;
+    margin-bottom: 13px !important;
+  }
+  .NA-feature-card-content > div .NA-card-desc {
+    margin-bottom: 10px !important;
+    font-size: 11px !important;
+  }
+  .NA-card-desc span {
+    font-size: 12px !important;
+  }
+  .NA-icon-desc {
+    font-size: 12px !important;
+  }
+  .NA-card-price {
+    padding-top: 10px !important;
+  }
+  .NA-card-price span,
+  .NA-card-price .discount,
+  .NA-card-price .free,
+  .NA-card-price a {
+    font-size: 14px !important;
+  }
+  .NA-card-note {
+    width: auto;
+    padding: 6px 8px;
+    font-size: 12px;
+  }
+}

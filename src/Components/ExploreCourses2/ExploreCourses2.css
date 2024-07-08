@@ -1,0 +1,155 @@
+.NA-ExploreCourses2 {
+  position: relative;
+  background: linear-gradient(92.95deg, #feb6b6 0%, #b7e1ff 100%);
+  border-radius: 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.NA-ExploreCourses2 .NA-ExploreCourses-text {
+  text-align: center;
+  width: 600px;
+  padding: 52px 0 60px;
+  z-index: 1;
+}
+.NA-ExploreCourses2 .NA-ExploreCourses-text .NA-ExploreCourses-subtitle {
+  color: black;
+  font-weight: 600;
+}
+.NA-credit-card {
+  filter: drop-shadow(#0000001a 4px 0 10px);
+  animation: scale 4s ease 4s infinite;
+  width: 100%;
+}
+.NA-for-glassAnimation {
+  position: absolute;
+}
+.NA-credit-cardWhite {
+  top: 0;
+  right: 5%;
+  width: 23%;
+}
+.NA-credit-cardYellow {
+  bottom: 0;
+  right: 0;
+  width: 26.12%;
+}
+.NA-credit-cardGreen {
+  top: 0;
+  left: 0;
+  width: 19%;
+}
+.NA-credit-cardPurple {
+  right: 0;
+  top: 30%;
+  width: 10.13%;
+}
+.NA-credit-cardBlue {
+  left: 0;
+  bottom: 0;
+  width: 17.52%;
+}
+.NA-credit-cardBabeyblue {
+  top: 14%;
+  left: 5%;
+  width: 21.55%;
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.098);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* large screen */
+@media (min-width: 993px) and (max-width: 1566px) {
+  .NA-ExploreCourses2 .NA-ExploreCourses-text {
+    width: auto;
+  }
+  .NA-credit-cardWhite {
+    right: 0;
+  }
+  .NA-credit-cardYellow {
+    right: -4%;
+  }
+  .NA-credit-cardPurple {
+    top: 45%;
+  }
+  .NA-credit-cardBabeyblue {
+    top: 11%;
+    left: -2%;
+  }
+}
+
+/* medium screen */
+@media (min-width: 769px) and (max-width: 992px) {
+  .NA-ExploreCourses2 .NA-ExploreCourses-text {
+    width: auto;
+    padding: 40px 0;
+  }
+  .NA-credit-cardWhite {
+    right: 0;
+  }
+  .NA-credit-cardYellow {
+    right: -4%;
+  }
+  .NA-credit-cardPurple {
+    top: 40%;
+  }
+  .NA-credit-cardBabeyblue {
+    top: 11%;
+    left: -2%;
+  }
+}
+
+/* small screen */
+@media (min-width: 577px) and (max-width: 768px) {
+  .NA-ExploreCourses2 .NA-ExploreCourses-text {
+    width: auto;
+    padding: 30px 0;
+  }
+  .NA-credit-cardWhite {
+    right: 0;
+  }
+  .NA-credit-cardYellow {
+    right: -4%;
+  }
+  .NA-credit-cardPurple {
+    top: 55%;
+  }
+  .NA-credit-cardBabeyblue {
+    top: 10%;
+    left: -5%;
+  }
+}
+
+
+/* mobile screen */
+@media (min-width: 200px) and (max-width: 576px) {
+  .NA-ExploreCourses2 .NA-ExploreCourses-text {
+    width: auto;
+    padding: 25px 0;
+  }
+  .NA-credit-cardWhite {
+    right: 0;
+  }
+  .NA-credit-cardGreen {
+    left: -7%;
+  }
+  .NA-credit-cardYellow {
+    right: -4%;
+  }
+  .NA-credit-cardPurple {
+    top: 55%;
+  }
+  .NA-credit-cardBabeyblue {
+    top: 10%;
+    left: -10%;
+  }
+}

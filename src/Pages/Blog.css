@@ -1,0 +1,170 @@
+/* Nahla Blog-listing */
+.NA-blog {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+.NA-blog .rb-listing {
+  align-items: center;
+}
+.NA-blog .rb-listing:hover .NA-article-card-content h3 {
+  color: var(--main-color);
+}
+.NA-blog .rb-listing:hover {
+  background-color: var(--white-grey);
+}
+.NA-blog .NA-feature-card {
+  width: 47% !important;
+}
+.rb-listing .NA-article-card-img {
+  position: relative;
+  width: 410px;
+  height: 100%;
+}
+.rb-listing .NA-article-card-content {
+  width: 580px;
+}
+
+.rb-listing .NA-article-card-img img {
+  height: 100%;
+  border-radius: 14px 0 0 14px;
+  object-fit: cover;
+}
+.rb-listing .NA-article-card-img a {
+  width: 100%;
+  height: 100%;
+}
+.NA-blog .rb-CoursePagination {
+  width: 990px;
+}
+.NA-blog .rb-listing .NA-article-card-content .NA-span2 {
+  display: inline;
+}
+.NA-blog .rb-listing .NA-article-card-content .NA-span1 {
+  display: none;
+}
+.NA-blog-relative {
+  position: relative;
+}
+
+/* for nahla BlogFilter bar */
+.NA-filter-btn {
+  display: none;
+}
+.NA-FilterBar {
+  transition: display 0.5s;
+}
+.rb-CoursePagination .NA-FilterBar {
+  position: absolute;
+  top: 2%;
+  right: 15px;
+  background-color: white;
+  width: 280px;
+  min-height: 100vh;
+  padding: 40px 20px;
+  display: none;
+}
+.rb-CoursePagination .NA-FilterBar .NA-filter-icon {
+  display: inline;
+  position: absolute;
+  right: 2px;
+  color: var(--main-color);
+  cursor: pointer;
+}
+.rb-listing .NA-article-card-content {
+  gap: 0;
+}
+
+/* large screen */
+@media (min-width: 993px) and (max-width: 1489px) {
+ 
+  .NA-blog .rb-CoursePagination {
+    width: 80%;
+  }
+  .NA-blog .rb-listing {
+    width: 100%;
+  }
+  .NA-blog .rb-listing .NA-article-card-content .NA-span2 {
+    font-size: 11px;
+  }
+}
+
+/* media for filter bar */
+@media (min-width: 200px) and (max-width: 1111px) {
+  .NA-blog .rb-CoursePagination {
+    width: 100%;
+  }
+  .NA-blog .search-view .NA-filter-btn {
+    display: inline !important;
+    font-size: 19px;
+  }
+  .rb-CoursePagination .NA-FilterBar {
+    display: inline;
+  }
+  
+}
+
+/* medium screen */
+@media (min-width: 769px) and (max-width: 992px) {
+  .NA-blog .rb-CoursePagination  .NA-articlesCards {
+    justify-content: space-between;
+}
+  .NA-blog .rb-listing {
+    width: 100%;
+    height: 150px !important;
+  }
+  .rb-listing .NA-article-card-img {
+    width: 510px;
+  }
+  .NA-blog .rb-listing .NA-article-card-content .NA-span2 {
+    font-size: 11px;
+  }
+ 
+}
+
+/* small screen */
+@media (min-width: 577px) and (max-width: 768px) {
+  .NA-blog .NA-feature-card {
+    width: 340px !important;
+  }
+  .NA-blog .rb-listing {
+    width: 100%;
+    height: 190px !important;
+  }
+  .NA-blog .rb-listing .NA-article-card-content .NA-span2 {
+    font-size: 11px;
+  }
+
+  .NA-blog .rb-CoursePagination .NA-articlesCards {
+    justify-content: center;
+  }
+  .NA-blog .NA-FilterBar .SHaaban-recent-post-body {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+/* mobile screen */
+@media (min-width: 200px) and (max-width: 576px) {
+  .NA-blog .NA-feature-card {
+    width: 340px !important;
+  }
+  .NA-blog .rb-listing {
+    width: 100%;
+  }
+  .NA-blog .rb-listing .NA-article-card-content .NA-span2 {
+    font-size: 11px;
+  }
+  .rb-CoursePagination .NA-FilterBar {
+    width: 250px;
+  }
+  .NA-blog .NA-FilterBar .SHaaban-recent-post-body {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .NA-blog .NA-article-card-content  {
+    padding: 15px 10px;
+    gap: 6px;
+  }
+}

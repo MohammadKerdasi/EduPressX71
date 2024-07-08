@@ -1,0 +1,194 @@
+.anything
+{
+  border-radius: 5px;
+}
+
+.Mk-accordion {
+  margin-bottom: 12px;
+  border-radius: 4px;
+}
+
+.Mk-accordion-titleAndSub {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  border-radius: 8px;
+}
+.Mk-AccordionTitle
+{
+  font-family: var(--Title);
+  font-weight: 600;
+  font-size: 14px;
+}
+.Mk-AccordionsubTitle
+{
+  width: 125px;
+  display: flex;
+  justify-content: space-between; 
+}
+.Mk-AccordionsubTitle span 
+{
+  font-size: 12px;
+  color: var(--dark-grey);
+
+}
+.Mk-accordion-content {
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+  background-color: white;
+  border-radius: 4px;
+}
+.Mk-accordion-content.open {
+  max-height: max-content;
+}
+.Mk-AccordionUl
+{
+  margin: 0;
+  padding: 12px 10px 12px 60px ;
+}
+.Mk-AccordionUl li
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  list-style: none;
+  cursor: pointer;
+  padding-right: 10px;
+}
+.Mk-AccordionArrowIcon
+{
+  margin-right: 8px;
+}
+.Mk-AccordionUl li span 
+{
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--paragraph);
+  color: black;
+  margin-top: 5px;
+}
+.Mk-LessonIcon
+{
+  margin: 0 10px 4px 0px;
+}
+.Mk-AccordionUl li :hover
+{
+color: var(--main-color);
+}
+.Mk-AccordionArrowIcon {
+  transition: transform 0.3s ease;
+}
+
+.Mk-AccordionArrowIcon.open {
+  transform: rotate(180deg);
+}
+.Mk-AccordionTitle.open{
+  color: var(--main-color);
+}
+.MK-Accordion-btn
+{
+  
+  color: white;
+  background-color: var(--blue);
+  border-radius: 8px;
+  padding: 4px 12px;
+  border: 0;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  
+}
+.MK-Accordion-btn p 
+{
+  margin: 0%;
+  font-size: 14px;
+}
+.Mk-Li-Span
+{
+  color: var(--dark-grey) !important;
+  font-size: 16px !important;
+}
+.Mk-Priview
+{
+  width: 188px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px;
+}
+.Mk-liMargin
+{
+  margin-bottom:20px ;
+}
+.Mk-225
+{
+  margin-left: 10px;
+}
+.MK-Accordion-btn:hover
+{
+  background-color: var(--main-color);
+}
+.MK-Accordion-btn:hover p
+{
+  color: white;
+}
+.Mk-lockSign
+{
+  margin-right: -2px;
+}
+
+.Mk-SingleCourseFAQs:last-child
+{
+  margin: 0;
+}
+
+@media (max-width:800px){
+  .Mk-AccordionUl
+  {
+    padding: 12px 20px;
+  }
+  .Mk-AccordionUl li
+  {
+    padding: 0px;
+  }
+  .Mk-Li-Span
+  {
+    font-size: 12px;
+  }
+}
+@media (max-width:750px){
+  .Mk-AccordionsubTitle
+  {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .Mk-Priview
+  {
+    width: max-content;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .Mk-AccordionTitle 
+  {
+    font-size: 10PX;
+  }
+
+  /* .Mk-AccordionTitle
+  {
+    font-size: 12px;
+  } */
+
+}
+@media (max-width:500px){
+  .Mk-AccordionUl li span 
+  {
+    font-size: 10PX;
+  }
+  .Mk-Li-Span
+  {
+    font-size: 10px !important;
+  }
+}

@@ -1,0 +1,248 @@
+.CoursesSidebar {
+    width: 28.931%;
+    z-index: 999;
+}
+
+.CoursesSidebar .rb-flex-check {
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+}
+
+.CoursesSidebar .rb-flex-check svg {
+    font-size: 11px;
+    margin-bottom: 3px;
+    margin-right: 2px;
+}
+
+.CoursesSidebar .rb-tit-sidebar {
+    width: max-content;
+    font-size: 20px;
+    margin-bottom: 20px;
+    /* padding-right: 82.529px; */
+}
+
+.CoursesSidebar .rb-flex-check input:checked label {
+    color: black;
+}
+
+.CoursesSidebar .rb-flex-check label {
+     color: var(--dark-grey);
+    font-family: var(--paragarph), sans-serif;
+    font-weight: 400;
+    font-size: 18px !important;
+}
+
+.rb-flex-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rb-flex-label input[type="checkbox"]:checked + label,
+  .rb-flex-label input[type="checkbox"]:checked + label + p {
+    color: black;
+  }
+  
+  .rb-flex-label input[type="checkbox"]:checked + label,
+  .rb-flex-label input[type="checkbox"]:checked + label + p {
+    color: black;
+  }
+  
+  .rb-flex-label input[type="checkbox"]:checked {
+    accent-color: #555555; 
+  }
+  
+
+.CoursesSidebar p {
+    font-size: 18px !important;
+    margin-bottom: 0;
+}
+
+.CoursesSidebar input {
+    width: 16px;
+    height: 16px;
+}
+
+.rb-flex-label {
+    gap: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.CoursesSidebar .rb-padding-top {
+    padding-top: 30px;
+}
+
+/* .rb-filter-sidebar{ */
+/* display: none; */
+/* } */
+.CoursesSidebar.visible {
+    opacity: 1;
+    /*transform: translateX(0);
+    ransition: opacity 3s ease; */
+    margin-left: 100px;
+    -webkit-transition: opacity 3s ease;
+    -moz-transition: opacity 3s ease;
+    -ms-transition: opacity 3s ease;
+    -o-transition: opacity 3s ease;
+}
+
+/* p{ */
+/* margin-bottom: 0 ; */
+/* } */
+
+/* mediaQuery------------------------------------------------------------ */
+
+@media only screen and (max-width: 1580px) {
+    .CoursesSidebar .rb-flex-check {
+        width: 160px;
+    }
+
+    .CoursesSidebar .rb-tit-sidebar {
+        font-size: 16px;
+    }
+
+    .CoursesSidebar input {
+        width: 11px;
+        height: 11px;
+    }
+
+    .CoursesSidebar .rb-flex-check label,
+    .CoursesSidebar p {
+        font-size: 14px !important;
+    }
+
+    .CoursesSidebar .rb-flex-check svg {
+        font-size: 10px;
+        margin-bottom: 1px;
+
+    }
+
+}
+
+/* ====================================================================================== */
+/* (min-width: 992px) and  */
+@media (max-width: 1200px) {
+    .CoursesSidebar-courses .CoursesSidebar p {
+        margin-bottom: 0;
+    }
+
+    .CoursesSidebar {
+        transition: all 1s ease;
+        width: 25%;
+        top: 0px;
+        height: max-content;
+        z-index: 50;
+        border-radius: 3px;
+        padding: 45px 0 59px 21px;
+        background-color: white;
+        right: 0px;
+        position: absolute;
+        border: 1px solid var(--light-gray);
+        opacity: 1;
+        -webkit-transition: all 1s ease;
+        -moz-transition: all 1s ease;
+        -ms-transition: all 1s ease;
+        -o-transition: all 1s ease;
+    }
+
+
+
+
+    .CoursesSidebar .rb-tit-sidebar {
+
+        font-size: 18px;
+        margin-bottom: 12px;
+        padding-right: 0px;
+    }
+
+
+    .rb-filter-visible {
+        z-index: 51;
+        position: absolute;
+        top: 3px;
+        right: 12px;
+        z-index: 86;
+        position: absolute;
+    }
+
+    .rb-filter-sidebar {
+        transition: all 0.3s ease;
+        font-size: 18px;
+        color: black;
+        border: none;
+        background-color: transparent;
+        transition: width 5s ease;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+    }
+
+    .rb-filter-sidebar:hover,
+    .rb-filter-sidebar:focus {
+        /* filter: drop-shadow(0px 0px 5px 0px #fdbf00); */
+        color: var(--main-color) !important;
+    }
+
+    .rb-filter-sidebar p {
+        font-size: 18px !important;
+    }
+
+    .CoursesSidebar .rb-padding-top {
+        width: 132px;
+        padding-top: 0px;
+    }
+
+    .CoursesSidebar .rb-flex-check {
+        width: 203px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .CoursesSidebar p {
+        display: none;
+    }
+
+    .CoursesSidebar .rb-flex-check {
+        width: 167px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rb-filter-sidebar{
+        font-size: 17px;
+    }
+    .CoursesSidebar p {
+        display: none;
+    }
+
+
+    .CoursesSidebar input {
+        width: 11px;
+        height: 11px;
+    }
+
+    .CoursesSidebar .rb-tit-sidebar {
+        font-size: 16px;
+    }
+
+    .CoursesSidebar .rb-flex-check label,
+    .CoursesSidebar p {
+        font-size: 12px !important;
+    }
+
+    .CoursesSidebar {
+        width: 38%;
+        padding: 26px 0 7px 21px;
+    }
+}
+@media (max-width: 576px){
+    .CoursesSidebar {
+        width: 60%;
+    }
+}

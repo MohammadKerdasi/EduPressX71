@@ -1,0 +1,66 @@
+.SHaaban-adding-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0 60px;
+}
+
+.SHaaban-pagination-container {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.SHaaban-pagination-container li {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    /* border: 1px solid var(--light-gray); */
+    border: 1px solid #EAEAEA;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    transition: all .3s;
+    font-weight: 600;
+}
+
+.SHaaban-pagination-container li:hover {
+    background-color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    color: white;
+}
+
+.SHaaban-pagination-container li.active {
+    background-color: black;
+    border: 1px solid black;
+    color: white;
+}
+
+@media (max-width:1366px) and (min-width:950px) {
+    .SHaaban-pagination-container li {
+        width: 38.15px;
+        height: 38.15px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width:950px) and (min-width:440px) {
+    .SHaaban-pagination-container li {
+        width: 34.15px;
+        height: 34.15px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width:440px) {
+    .SHaaban-pagination-container li {
+        width: 28px;
+        height: 28px;
+        font-size: 10px;
+    }
+}

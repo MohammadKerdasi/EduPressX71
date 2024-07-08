@@ -1,0 +1,47 @@
+.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    visibility: hidden;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    height: 0;
+}
+
+.SHaaban-sideBar-blog-listing-with-click-on-filter-btn {
+    margin: 35px 0;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    height: max-content;
+    transition: opacity .5s ease-in-out, transform .5s ease-in-out;
+}
+
+
+#SHaaban-filter-btn-text {
+    margin: 0;
+    font-size: 18px !important;
+    font-weight: 500;
+}
+
+
+.SHaaban-adding-style-for-filterBar-btn {
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid var(--dark-grey);
+    color: #FF782D;
+    /* border: 1px solid #FF782D;
+    color: #FF782D; */
+    width: 100%;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+    display: none;
+}
+
+@media (max-width:1110px) {
+    .SHaaban-adding-style-for-filterBar-btn {
+        display: flex;
+    }
+}

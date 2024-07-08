@@ -1,0 +1,1203 @@
+ /* --main-color : #FF782D;
+ --green : #55BE24;
+ --red : #F51A1A;
+ --blue : #2580D5;
+ --light-gray : #F5F5F5;
+ --grey : #9D9D9D;
+ --dark-grey : #555555; */
+
+ .SHaaban-LISTING {
+     display: flex;
+     flex-flow: row wrap;
+     justify-content: space-between;
+ }
+
+ .SHaaban-detail {
+     width: 990px !important;
+ }
+
+ .SHaaban-title-and-meta h1 {
+     font-size: 36px !important;
+     padding: 0 !important;
+     font-weight: 600 !important;
+     margin-bottom: 20px !important;
+ }
+
+ .SHaaban-title-and-meta-info-container {
+     display: flex;
+     gap: 25px;
+     justify-content: flex-start;
+     margin-bottom: 40px !important;
+ }
+
+ .SHaaban-title-and-meta-info {
+     display: flex;
+     gap: 10px;
+     align-items: center;
+ }
+
+ .SHaaban-title-and-meta-info img {
+     height: 20px
+ }
+
+ .SHaaban-title-and-meta-info p {
+     color: var(--dark-grey);
+     margin: 0;
+ }
+
+ #SHaaban-adding-style-for-main-image {
+     margin-bottom: 30px;
+     width: 100%;
+     height: 603px;
+ }
+
+ #SHaaban-blog-content {
+     margin-bottom: 60px !important;
+ }
+
+ #SHaaban-blog-content p {
+     margin-bottom: 40px;
+     color: var(--dark-grey);
+ }
+
+ #SHaaban-tags-area {
+     display: flex;
+     flex-wrap: wrap;
+     gap: 8px;
+     align-items: center;
+     margin-bottom: 40px;
+ }
+
+ .SHaaban-remove-margin {
+     margin: 0 !important;
+ }
+
+ #Shaaban-contact-area {
+     display: flex;
+     gap: 15px;
+     align-items: center;
+ }
+
+ .SHaaban-contact-list {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     margin: 0px;
+     padding: 0px;
+     justify-content: flex-start;
+     gap: 15px;
+ }
+
+ .SHaaban-contact-list a {
+     color: var(--dark-grey);
+     transition: all .2s;
+ }
+
+ .SHaaban-contact-list a:hover {
+     /* color: var(--main-color); */
+     color: #FF782D;
+ }
+
+ .SHaaban-slider-container {
+     display: flex;
+     justify-content: space-between;
+     margin-bottom: 60px;
+ }
+
+ .SHaaban-slider {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border: 1px solid var(--light-gray);
+     border-radius: 30px;
+     width: 480px;
+     /* width: 48.209%; */
+ }
+
+ .SHaaban-slider-arrow {
+     flex-grow: 10;
+     background: var(--light-gray);
+     /* العرض 60 بيكسل لان المارجين عم يضغط عليه وقت عم يكون 48 بيكسل ويضرب الشكل */
+     width: 60px !important;
+     height: 48px !important;
+     border-radius: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     color: var(--dark-grey);
+     margin: 49.5px 30px;
+ }
+
+ .SHaaban-slider-arrow:hover {
+     /* color: var(--main-color); */
+     color: #FF782D;
+     cursor: pointer;
+ }
+
+ .SHaaban-slider-content-title {
+     color: var(--dark-grey);
+     font-size: 18px;
+     margin-bottom: 12px !important;
+ }
+
+ .SHaaban-slider-content-mainText {
+     font-size: 18px;
+     font-weight: 700;
+     line-height: 24px;
+     margin: 0;
+ }
+
+ .SHaaban-comment-section {
+     width: 100%;
+ }
+
+ .SHaaban-comment-section h4 {
+     font-size: 20px;
+     margin-bottom: 12px;
+ }
+
+ .SHaaban-text-end {
+     text-align: end;
+ }
+
+
+ .SHaaban-slider-content-first-child {
+     margin: 2.17% 2.17% 2.17% 0;
+ }
+
+ .SHaaban-slider-content-second-child {
+     margin: 2.17% 0 2.17% 2.17%;
+ }
+
+ #SHaaban-comment-info,
+ .SHaaban-comment-date {
+     color: var(--dark-grey);
+ }
+
+ #SHaaban-comment-info,
+ #SHaaban-comment-info span {
+     font-size: 18px !important;
+     margin-bottom: 30px;
+ }
+
+ .SHaaban-comment-userName {
+     font-weight: 600;
+     font-size: 16px;
+     margin-bottom: 8px !important;
+ }
+
+ .SHaaban-comment-content {
+     font-weight: 400;
+     font-size: 18px;
+     line-height: 27px;
+     color: var(--dark-grey);
+     margin-bottom: 8px !important;
+ }
+
+ .SHaaban-adding-margin-left {
+     margin-left: 5px
+ }
+
+ .SHaaban-comment-body {
+     border-top: 1px solid #EAEAEA;
+     padding-top: 20px;
+ }
+
+ .SHaaban-adding-flex {
+     display: flex;
+ }
+
+ .SHaaban-adding-style-for-comment-imange {
+     width: 60px;
+     height: 60px;
+     margin-right: 20px;
+ }
+
+ .SHaaban-adding-flex-grow {
+     flex-grow: 10;
+ }
+
+ .SHaaban-adding-flex-center-spaceBetween {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .SHaaban-adding-margin-bottom {
+     margin-bottom: 20px;
+ }
+
+ .SHaaban-adding-style-for-replay {
+     font-weight: 600;
+     margin-left: 9px;
+ }
+
+ .SHaaban-adding-style-with-hover:hover {
+     cursor: pointer;
+ }
+
+ .SHaaban-replay-comment-body {
+     position: relative;
+     left: 80px;
+ }
+
+ .SHaaban-adding-width {
+     width: 91%;
+ }
+
+ #SHaaban-form-body {
+     margin-top: 30px;
+ }
+
+ .SHaaban-styling-form-inputs input::placeholder,
+ .SHaaban-styling-text-area::placeholder {
+     color: var(--grey);
+ }
+
+ .SHaaban-styling-form-inputs {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+ }
+
+ .SHaaban-styling-text-area {
+     width: 100%;
+     height: 110px;
+     margin: 20px 0;
+     padding-top: 10px;
+     outline: none;
+     border: 1px solid var(--grey);
+     border-radius: 8px;
+     padding-left: 16px;
+ }
+
+ #SHaaban-adding-style-for-label {
+     color: var(--dark-grey);
+     margin-left: 6px;
+ }
+
+ .SHaaban-form-area-title {
+     font-size: 20px;
+     font-weight: 600 !important;
+     margin-bottom: 12px;
+ }
+
+ .SHaaban-form-area-paragraph {
+     color: #555555;
+     font-weight: 400 !important;
+     margin-bottom: 30px;
+ }
+
+ .SHaaban-sideBar-blog-listing {
+     width: 270px !important;
+     /* width: 20.93% !important; */
+ }
+
+ .SHaaban-styling-text-area:focus {
+     border: 1px solid #FF782D;
+ }
+
+ .SHaaban-btn-area {
+     display: flex;
+     gap: 20px;
+     margin: 20px 0;
+ }
+
+ .SHaaban-styling-width {
+     min-width: max-content;
+ }
+
+ .d-none {
+     display: none;
+ }
+
+ .SHaaban-replay-area {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     width: 100%;
+ }
+
+ .sHaaban-remove-arrow-in-large-screen {
+     visibility: hidden;
+ }
+
+ .SHaaban-adding-flex-align-center {
+     /* ===New Added=== */
+     display: flex;
+     align-items: center;
+ }
+
+ .SHaaban-adding-style-for-blog-content-title {
+     /* ===New Added=== */
+     font-size: 18px;
+     font-weight: 400 !important;
+     margin-bottom: 0 !important;
+ }
+
+ @media (max-width:1919px) {
+     .SHaaban-detail {
+         width: 76.744% !important;
+     }
+
+     .SHaaban-slider {
+         width: 48.209%;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         width: 20.93% !important;
+     }
+
+     .SHaaban-slider-arrow {
+         margin: 9.8372% 6.325%;
+     }
+ }
+
+ @media (max-width:1800px) and (min-width:1630px) {
+     #SHaaban-adding-style-for-main-image {
+         height: 551.494px;
+     }
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 33px !important;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 56.25px;
+         height: 56.25px;
+     }
+ }
+
+ @media (max-width:1630px) and (min-width:1505px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 30px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 471.094px;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 50.9375px;
+         height: 50.9375px;
+     }
+ }
+
+ @media (max-width:1505px) and (min-width:1395px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 28px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 438.117px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         font-size: 16px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 7px !important;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 47.031px;
+         height: 47.031px;
+     }
+ }
+
+ @media (max-width:1395px) and (min-width:1230px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 25px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 386.297px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         font-size: 16px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 7px !important;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 43.5938px;
+         height: 43.5938px;
+     }
+ }
+
+ @media (max-width:1230px) and (min-width:1190px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 24px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 380.016px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         font-size: 15px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 7px !important;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 38.4375px;
+         height: 38.4375px;
+     }
+ }
+
+ @media (max-width:1190px) and (min-width:1110px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 22px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 373.73px;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 15px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 7px !important;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 37.1875px;
+         height: 37.1875px;
+     }
+ }
+
+ @media (max-width:1110px) and (min-width:1010px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 26px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 420px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 15px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 34.6875px;
+         height: 34.6875px;
+     }
+
+     .SHaaban-adding-width {
+         width: 89%;
+     }
+ }
+
+ @media (max-width:1010px) and (min-width:915px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 24px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 420px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 15px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-adding-width {
+         width: 89%;
+     }
+ }
+
+ @media (max-width:915px) and (min-width:850px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 22px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 350px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 14px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 89%;
+     }
+ }
+
+ @media (max-width:850px) and (min-width:760px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 20px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 300px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 14px !important;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 84%;
+     }
+ }
+
+ @media (max-width:760px) and (min-width:701px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 18px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 270px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 14px !important;
+     }
+
+     .SHaaban-slider-content-mainText {
+         font-size: 12px;
+     }
+
+     /* 
+     .SHaaban-slider {
+         width: 30% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 40px !important;
+         height: 40px !important;
+         margin: 10px;
+     } */
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         padding-left: 20px;
+     }
+ }
+
+ @media (max-width:701px) and (min-width:577px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 16px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 270px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 13px !important;
+     }
+
+     .SHaaban-slider-content-mainText {
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 35% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 40px !important;
+         height: 40px !important;
+         margin: 10px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+         font-size: 14px;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+         margin: 20px 0;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         padding-left: 20px;
+     }
+
+ }
+
+ @media (max-width:577px) and (min-width:502px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 16px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 235px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 12px !important;
+     }
+
+     .SHaaban-slider-content-mainText {
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 35% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 28px !important;
+         height: 28px !important;
+         margin: 10px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+         font-size: 12px;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+         margin: 20px 0;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 15px;
+         height: 15px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         padding-left: 20px;
+     }
+
+     .SHaaban-title-and-meta-info-container {
+         gap: 5px;
+         flex-direction: column;
+     }
+ }
+
+ @media (max-width:502px) and (min-width:350px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 15px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 235px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 12px !important;
+     }
+
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span {
+         font-size: 10px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 40% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 25px !important;
+         height: 25px !important;
+         margin: 10px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+         font-size: 11px;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+         margin: 20px 0;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 12px;
+         height: 12px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         padding-left: 20px;
+     }
+
+     .SHaaban-title-and-meta-info-container {
+         gap: 5px;
+         flex-direction: column;
+     }
+
+     .SHaaban-styling-width {
+         min-width: 100% !important;
+     }
+
+     .SHaaban-btn-area {
+         flex-direction: column;
+         gap: 15px;
+     }
+ }
+
+ @media (max-width:350px) {
+
+     .SHaaban-title-and-meta h1,
+     .SHaaban-comment-section {
+         font-size: 13px !important;
+     }
+
+     #SHaaban-adding-style-for-main-image {
+         height: 200px !important;
+     }
+
+     .SHaaban-slider-content-mainText,
+     #SHaaban-adding-style-for-label,
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span,
+     #SHaaban-blog-content p,
+     #SHaaban-comment-info,
+     #SHaaban-comment-info span,
+     .SHaaban-comment-userName,
+     .SHaaban-comment-date,
+     .SHaaban-comment-content,
+     .SHaaban-adding-style-for-replay,
+     .SHaaban-form-area-paragraph {
+         font-size: 11px !important;
+     }
+
+     .SHaaban-title-and-meta-info p,
+     .SHaaban-title-and-meta-info span {
+         font-size: 9px;
+     }
+
+     .SHaaban-slider-content-mainText {
+         /* font-size: 12px; */
+         display: none;
+     }
+
+     .SHaaban-slider {
+         width: 44% !important;
+         border-radius: 15px;
+     }
+
+     .SHaaban-slider-arrow {
+         flex-grow: 0;
+         width: 20px !important;
+         height: 20px !important;
+         margin: 10px;
+     }
+
+     .SHaaban-slider-content-title {
+         margin-bottom: 6px !important;
+         font-size: 10px;
+     }
+
+     .SHaaban-styling-text-area {
+         height: 90.1771px;
+         margin: 20px 0;
+     }
+
+     .SHaaban-LISTING {
+         flex-flow: column wrap;
+     }
+
+     .SHaaban-detail {
+         width: 100% !important;
+     }
+
+     .SHaaban-sideBar-blog-listing {
+         display: none;
+     }
+
+     .SHaaban-adding-style-for-comment-imange {
+         width: 31.5625px;
+         height: 31.5625px;
+     }
+
+     .SHaaban-title-and-meta-info img {
+         width: 12px;
+         height: 12px;
+     }
+
+     .SHaaban-adding-width {
+         width: 100% !important;
+     }
+
+     .SHaaban-replay-comment-body {
+         left: 0;
+         padding-left: 20px;
+     }
+
+     .SHaaban-title-and-meta-info-container {
+         gap: 5px;
+         flex-direction: column;
+     }
+
+     .SHaaban-styling-width {
+         min-width: 100% !important;
+     }
+
+     .SHaaban-btn-area {
+         flex-direction: column;
+         gap: 15px;
+     }
+ }

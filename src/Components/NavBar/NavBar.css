@@ -1,0 +1,419 @@
+z
+
+/* تعيين أنماط عامة */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.ra-nav-comp {
+    z-index: 999;
+    border-bottom: solid 1px var(--light-gray);
+    width: 100%;
+}
+
+/* ------------------------------------------------------- */
+.ra-nav-comp ::-webkit-scrollbar-thumb {
+    background: var(--grey);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+
+.ra-nav-comp ::-webkit-scrollbar {
+    width: 4px;
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* لون المقبض عند التمرير */
+}
+
+/*  ----------------------------------------------------*/
+.ra-nav-comp .rb-search {
+
+    background-color: var(--white);
+    border: 1px solid var(--main-color);
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+}
+
+/* تغيير الخلفية عند التمرير أو التركيز */
+.ra-nav-comp .rb-search:hover,
+.ra-nav-comp .rb-search:focus {
+    background-color: var(--main-color);
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+/* تغيير لون الأيقونة عند التمرير أو التركيز */
+.ra-nav-comp .rb-search:hover .rb-search-icon,
+.ra-nav-comp .rb-search:focus .rb-search-icon {
+    color: var(--white) !important;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+.ra-nav-comp .container-fluid {
+    padding: 0px;
+    align-items: baseline;
+}
+
+.ra-nav-comp .navbar-nav {
+    align-items: baseline;
+
+    margin: 0 auto;
+}
+
+.ra-nav-comp h5 {
+
+    margin: 0;
+
+    font-size: 16px;
+    color: black;
+}
+
+/* .ra-nav-comp #navbarScrollingDropdown .rb-NavDropdown .rb-nav-link { */
+/* color: black; */
+/* padding: 2px 68px 4px 0; */
+/* text-decoration: none; */
+/* } */
+.ra-nav-comp #navbarScrollingDropdown {
+
+    font-weight: 600;
+    font-size: 16px;
+    color: black;
+    padding: 26.5px 20px;
+}
+
+
+.ra-nav-comp .navbar-collapse {
+    justify-content: space-between;
+}
+
+.ra-nav-comp .rb-nav-link {
+    padding: 26.5px 20px;
+    text-decoration: none;
+}
+
+.ra-nav-comp .rb-nav-link:hover,
+.ra-nav-comp .rb-nav-link:focus,
+.ra-nav-comp #navbarScrollingDropdown:hover {
+    background-color: var(--light-gray);
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -ms-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+}
+
+.ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a {
+
+    font-size: 18px;
+    padding: 0;
+    background-color:transparent;
+    color: black;
+
+}
+
+.ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a:hover {
+    background-color: transparent;
+    color: var(--main-color);
+    transition: color 0.3s ease, background-color 0.3s ease;
+    -webkit-transition: color 0.3s ease, background-color 0.3s ease;
+    -moz-transition: color 0.3s ease, background-color 0.3s ease;
+    -ms-transition: color 0.3s ease, background-color 0.3s ease;
+    -o-transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.ra-nav-comp .rb-nav-link:hover h5,
+.ra-nav-comp .rb-nav-link:focus h5,
+.ra-nav-comp #navbarScrollingDropdown:hover {
+    color: var(--main-color);
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+.ra-nav-comp .d-flex a {
+
+    font-size: 18px;
+    /* width: max-content; */
+    text-decoration: none;
+    color: black;
+}
+
+.ra-nav-comp .d-flex a:hover {
+    text-decoration: none;
+    color: var(--main-color);
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    -ms-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+}
+
+
+.ra-nav-comp .d-flex {
+
+    gap: 9px;
+    align-items: center;
+    padding: 12px 0;
+}
+
+.ra-nav-comp .rb-search .rb-search-icon {
+    color: var(--main-color);
+    font-size: 20px;
+}
+
+.ra-nav-comp .rb-logo-nav {
+    margin: 0px;
+}
+
+.rb-navbar-fixed {
+    position: fixed;
+    top: 0;
+
+
+}
+
+.rb-navbar-sticky {
+    position: sticky;
+    top: 0;
+
+}
+.navbar-toggler {
+    /* font-size: 16px; */
+    border: none !important;}
+
+    .navbar-toggler:focus {
+        color: var(--main-color);
+        outline: 0;
+        box-shadow: none;
+    }
+    
+/* Media Queries--------------------------------------------------------------------------------------------- */
+@media only screen and (min-width: 1501px) and (max-width:1700px){
+
+    .breadcrumb-container {
+        padding: 14px 16.4063% !important;
+    }
+
+    .ra-nav-comp h5 ,.ra-nav-comp h5,.ra-nav-comp #navbarScrollingDropdown
+    ,.ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a{
+        font-size: 15px;
+    }
+    .ra-nav-comp .rb-search {
+        width: 38px;
+        height: 38px;
+    }
+    .ra-nav-comp .d-flex a {
+        font-size: 17px;}
+    .ra-nav-comp .rb-nav-link,.ra-nav-comp #navbarScrollingDropdown {
+        padding: 21.5px 9px;
+    }
+    .ra-nav-comp .rb-search .rb-search-icon {
+        font-size: 18px;
+    }
+    .rb-logo {
+        width: 134px;
+    }
+}
+@media only screen and (min-width: 1261px) and (max-width:1500px) {
+    .rb-logo {
+        width: 125px;
+    }
+
+    .ra-nav-comp .rb-search {
+
+        width: 38px;
+        height: 38px;
+    }
+
+    .ra-nav-comp .rb-search .rb-search-icon {
+
+        font-size: 18px;
+    }
+
+    .ra-nav-comp h5,
+    .ra-nav-comp #navbarScrollingDropdown,.ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a {
+        width: max-content;
+        font-size: 13px;
+
+    }
+
+    .ra-nav-comp .rb-nav-link,
+    .ra-nav-comp #navbarScrollingDropdown {
+
+        padding: 15.5px 9px;
+    }
+
+    .ra-nav-comp .d-flex a {
+        font-size: 15px;
+        /* width: max-content; */
+
+    }
+
+    .ra-nav-comp .d-flex {
+        padding: 5px 0;
+    }
+
+}
+
+@media only screen and (min-width: 992px) and (max-width:1260px) {
+    .rb-logo {
+        width: 113px;
+    }
+
+    .ra-nav-comp .rb-nav-link,
+    .ra-nav-comp #navbarScrollingDropdown {
+        padding: 11.5px 8px;
+
+    }
+
+    .ra-nav-comp h5,
+    .ra-nav-comp #navbarScrollingDropdown,
+    .ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a {
+        width: max-content;
+        font-size: 11px;
+
+    }
+
+    .ra-nav-comp .d-flex a {
+        font-size: 12px;
+        /* width: max-content; */
+
+    }
+
+    .ra-nav-comp .d-flex {
+        gap: 5px;
+        padding: 5px 0;
+    }
+
+    .ra-nav-comp .rb-search {
+
+        width: 26px;
+        height: 26px;
+    }
+
+    .ra-nav-comp .rb-search .rb-search-icon {
+        margin-right: 1px;
+        font-size: 12px;
+        margin-bottom: 1px;
+    }
+}
+
+/*  ---------------------------------------*/
+
+/* Styles for medium screens */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .ra-nav-comp .rb-nav-link,
+    .ra-nav-comp #navbarScrollingDropdown {
+        padding: 7px 0px;
+    }
+
+
+
+    .rb-logo {
+        width: 130px;
+    }
+
+    .ra-nav-comp .rb-search {
+
+        width: 30px;
+        height: 30px;
+    }
+
+    .ra-nav-comp .rb-search .rb-search-icon {
+
+        font-size: 16px;
+    }
+
+    .ra-nav-comp .rb-nav-link:hover, .ra-nav-comp .rb-nav-link:focus, 
+    .ra-nav-comp #navbarScrollingDropdown:hover {
+        background-color: transparent;
+    }
+
+}
+
+/* Styles for small to medium screens */
+@media only screen and (max-width: 767px) {
+
+
+    .ra-nav-comp .rb-nav-link:hover, .ra-nav-comp .rb-nav-link:focus, 
+    .ra-nav-comp #navbarScrollingDropdown:hover {
+        background-color: transparent;
+    }
+
+    .ra-nav-comp .rb-nav-link,
+    .ra-nav-comp #navbarScrollingDropdown {
+        padding: 7px 0px;
+    }
+
+
+    .ra-nav-comp .d-flex a {
+        font-size: 16px;
+    }
+    .ra-nav-comp .rb-search {
+
+        width: 30px;
+        height: 30px;
+    }
+
+    .rb-logo {
+        width: 111px;
+    }
+
+    .ra-nav-comp .rb-search .rb-search-icon {
+        font-size: 16px;
+    }
+    .navbar-toggler {
+        font-size: 16px;
+       }
+
+}
+
+@media (max-width:580px) {
+    .ra-nav-comp h5 ,.ra-nav-comp h5,.ra-nav-comp #navbarScrollingDropdown
+    ,.ra-nav-comp .rb-Dropdown-nav .rb-NavDropdown a {
+        font-size: 14px;
+    }
+    .navbar-toggler {
+        font-size: 16px !important;
+       }
+
+    .ra-nav-comp .rb-nav-link,
+    .ra-nav-comp #navbarScrollingDropdown {
+        padding: 7px 0px;
+    }
+
+
+
+    .ra-nav-comp .rb-search {
+
+        width: 30px;
+        height: 30px;
+    }
+
+    .ra-nav-comp .rb-search .rb-search-icon {
+
+        font-size: 15px;
+    }
+}

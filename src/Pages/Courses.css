@@ -1,0 +1,33 @@
+.Courses{
+  position: relative;
+  display: flex;
+  gap: 30px;
+}
+
+
+@media only screen and (min-width: 1201px) and (max-width: 1580px){
+  .Courses {
+      /* flex-wrap: wrap; */
+      gap: 16px;
+
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .Courses {
+      gap: 15px;
+      align-items: baseline;
+  }
+
+}
+@media only screen and (min-width: 768px) and  (max-width: 991px){
+  .Courses {
+      gap: 21px;
+      align-items: baseline;
+  }
+}
+@media (max-width: 767px){
+.Courses {
+  gap: 4px;
+}
+
+}

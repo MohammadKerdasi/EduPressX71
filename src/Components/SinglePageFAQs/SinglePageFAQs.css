@@ -1,0 +1,95 @@
+/* h1{
+    margin: 0;
+    padding-bottom: 60px;
+} */
+.Mk-SingelCourseFAQs-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+  .Mk-SingleCourseFAQs
+  {
+    background-color: var(--light-gray);
+    width: 100%; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+  }
+  .Mk-SingleCorseFAQs-set {
+    width: 100%; 
+  }
+
+  .Mk-SingleCourseFAQs {
+    background-color: var(--light-gray);    
+    
+  }
+  .Mk-faq:last-child {
+    margin-bottom: 0; 
+  }
+  
+  .Mk-SingleCourseQuestion {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 20px 30px;
+    border-radius: 8px;
+  }
+  
+  .Mk-SingleCourseQuestion h5 {
+    
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .Mk-SingleCourseAnswer {
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.3s ease-out;
+    background-color: white;
+  }
+  .Mk-SingleCourseAnswer p
+  {
+    padding: 0px 30px 10px 30px;
+    font-size: 14px;
+  }
+  
+  .Mk-SingleCourseFAQs.active .Mk-SingleCourseQuestion h5 {
+    color: var(--main-color);
+    max-height: max-content;
+    transform: rotate(360deg);
+
+  }
+  .active .Mk-SingleCourseQuestion
+  {
+    border-radius: 8px 8px 0px 0px !important;
+    transition: all 0s ease-in-out;
+  }
+
+  .arrow-icon {
+    transition: transform 0.3s ease-out;
+  }
+  
+  .arrow-icon.active {
+    transform: rotate(180deg);
+  }
+
+ 
+
+  @media (max-width: 992px) {
+    .Mk-SingleCorseFAQs-set {
+        width: 100%; 
+        
+      }
+  }
+  @media (max-width: 550px){
+    .Mk-SingleCourseQuestion h5
+    {
+        font-size: 10px;
+        margin-right: 20px;
+    }
+  }
+ 
