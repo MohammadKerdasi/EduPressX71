@@ -248,12 +248,30 @@
   margin-left: 10px;
   
 }
+@keyframes ratingBarGrow {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--rating-width, 100%);
+  }
+}
 .Mk-RatingBarInner {
   height: 100%;
+  width: 0;
   background-color: var(--orange);
-  
-  
-}
+  animation: ratingBarGrow 1.5s ease-in-out forwards ;
+
+} 
+
+/* @keyframes Progress2 {
+  from{
+    width: 0 ;
+  }
+  to{
+    width: {percentage} ;
+  }
+} */
 .Mk-Comments
 {
   width: 100% !important;
@@ -786,6 +804,13 @@ color: var(--main-color);
     {
       flex-wrap: nowrap;
       font-size: 8px;
+    }
+    .Mk-StarsRatings p{
+      font-size: 13px;
+    }
+    .Mk-StarsRatings p .Mk-CountUp
+    {
+      font-size: 13px;
     }
   }
     /* .Mk-CommentContent, .Mk-CommentUsername , .Mk-CommentDate

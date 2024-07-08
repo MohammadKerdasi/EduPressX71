@@ -34,6 +34,7 @@ import not_filled_star from "./../../../public/assetsProject/imges/not-filled-st
 import Card_img from './../../../public/assetsProject/imges/card(6).png'
 import GirlImg from "./../../../public/assetsProject/imges/card(12).png";
 import ReplayIcon from "./../../../public/assetsProject/imageFromHaidar/Vector.svg";
+import CountUp from 'react-countup';
 
 
 
@@ -645,9 +646,14 @@ const Reviews = ({ comments,   }) => {
 
   return (
     <>
-      <h4 className="Mk-ReviewsHeading">Comments</h4>
+     <h4 className="Mk-ReviewsHeading">Comments</h4>
       <div className="Mk-40Rating">
-        <h1>4.0</h1>
+        {/* Use CountUp for animated rating value */}
+        <CountUp start={0} end={4.0} decimals={1} duration={1}>
+          {({ countUpRef }) => (
+            <h1 ref={countUpRef} />
+          )}
+        </CountUp>
         <div className="Mk-StarsRatings">
           <div className="Mk-Stars">
             <img style={{ width: "18px" }} src={filled_star} alt="star" />
@@ -656,7 +662,11 @@ const Reviews = ({ comments,   }) => {
             <img style={{ width: "18px" }} src={filled_star} alt="star" />
             <img style={{ width: "18px" }} src={not_filled_star} alt="star" />
           </div>
-          <p>based on 146,951 ratings</p>
+          <p>
+            based on{' '}
+            <CountUp className="Mk-CountUp"  start={0} end={146951} duration={2} separator="," />
+            {' '}ratings
+          </p>
         </div>
       </div>
       {[90, 5, 2, 2, 1].map((percentage, index) => (
@@ -671,9 +681,16 @@ const Reviews = ({ comments,   }) => {
               />
             ))}
           </span>
-          <span className="Mk-NumOfRate">{percentage}%</span>
+          <CountUp start={0} end={percentage} duration={2} suffix="%">
+            {({ countUpRef }) => (
+              <span className="Mk-NumOfRate" ref={countUpRef} />
+            )}
+          </CountUp>
           <div className="Mk-RatingBar">
-            <div className="Mk-RatingBarInner" style={{ width: `${percentage}%` }}></div>
+            <div
+              className="Mk-RatingBarInner"
+              style={{ "--rating-width": `${percentage}%` }}
+            ></div>
           </div>
         </div>
       ))}
