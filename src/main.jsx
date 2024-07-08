@@ -52,7 +52,7 @@ const router = createBrowserRouter([
         element: <BlogSingle />,
       },
       {
-        path: "*",
+        path: "Error",
         element: <Errorpage />,
       },
     ],

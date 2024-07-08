@@ -2,7 +2,7 @@
   "name": "edupressx7",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://MohammadKerdasi.github.io/EduPressX7",
+  "homepage": "https://MohammadKerdasi.github.io/EduPressX71",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
