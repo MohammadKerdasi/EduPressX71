@@ -14,6 +14,7 @@ import {
 import ArticlesCards from "../ArticlesCards/ArticlesCards";
 import FilterBar from "../FilterBar/FilterBar";
 import { useMediaQuery } from 'react-responsive';
+import NoResult from './../../../public/assetsProject/imges/noResult.jpg'
 // nahla
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -115,36 +116,35 @@ useEffect(() => {
         </div>
       </div>
 
-      {x ? (
-        <FeaturedCoursesCards FeaturedCards={paginatedItems} view={view} />
-      ) : (
-        <ArticlesCards ArticleCards={paginatedItems} view={view} />
-      )}
-      <ul className="rb-ul-pagination">
-        <li>
-          <a
-            onClick={() =>
-              handlePageChange(currentPage === 1 ? totalPages : currentPage - 1)
-            }
-          >
-            <FontAwesomeIcon icon={faAngleLeft} />
-          </a>
-        </li>
-        {[...Array(totalPages)].map((_, i) => (
-          <li key={i} className={currentPage === i + 1 ? "rb-PageActive" : ""}>
-            <a onClick={() => handlePageChange(i + 1)}>{i + 1}</a>
-          </li>
-        ))}
-        <li>
-          <a
-            onClick={() =>
-              handlePageChange(currentPage === totalPages ? 1 : currentPage + 1)
-            }
-          >
-            <FontAwesomeIcon icon={faAngleRight} />
-          </a>
-        </li>
-      </ul>
+      {paginatedItems.length > 0 ? ( 
+        x ? ( 
+          <FeaturedCoursesCards FeaturedCards={paginatedItems} view={view} /> 
+        ) : ( 
+          <ArticlesCards ArticleCards={paginatedItems} view={view} /> 
+        ) 
+      ) : (<div className='rb-result'> 
+         
+        <img className="rb-noResults" src={NoResult}/> 
+        <p>Not available, please try something else!!</p> 
+        </div> 
+      )} 
+      {paginatedItems.length > 0 ?(<ul className='rb-ul-pagination'> 
+        <li> 
+          <a onClick={() => handlePageChange(currentPage === 1 ? totalPages : currentPage - 1)}> 
+            <FontAwesomeIcon icon={faAngleLeft} /> 
+          </a> 
+        </li> 
+        {[...Array(totalPages)].map((_, i) => ( 
+          <li key={i} className={currentPage === i + 1 ? 'rb-PageActive' : ''}> 
+            <a onClick={() => handlePageChange(i + 1)}>{i + 1}</a> 
+          </li> 
+        ))} 
+        <li> 
+          <a onClick={() => handlePageChange(currentPage === totalPages ? 1 : currentPage + 1)}> 
+            <FontAwesomeIcon icon={faAngleRight} /> 
+          </a> 
+        </li> 
+      </ul>): ""}
 
       {sidebar ? <FilterBar onClick={showSidebar} /> : ""}
     </div>

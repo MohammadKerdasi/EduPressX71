@@ -194,6 +194,20 @@ padding-bottom: 67px;
         .NA-view-svg:hover path, .NA-view-svg:focus path {
           fill: var(--main-color);
         } 
+        .rb-noResults{ 
+          width: 100%; 
+          padding: 0 131px 
+           
+          } 
+           
+          .rb-result{ 
+            font-size: 25px; 
+            display: flex; 
+            flex-direction: column; 
+          color: var(--grey); 
+          align-items: center; 
+          justify-content: center; 
+          }
     /* ---------------------------------------------------------------- */
 
 
@@ -663,6 +677,9 @@ padding-bottom: 67px;
   .rb-CoursePagination .rb-ul-pagination {
     gap: 2px;
     margin-top: 8px;
+}
+.rb-noResults{
+  padding: 0;
 }
 
 }
