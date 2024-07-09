@@ -628,7 +628,7 @@ const PaginationReviews = ({
 
 const Reviews = ({ comments,   }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const commentsPerPage = 2; 
+  const commentsPerPage = 3; 
 
   const indexOfLastComment = currentPage * commentsPerPage;
   const indexOfFirstComment = indexOfLastComment - commentsPerPage;
@@ -691,14 +691,6 @@ const Reviews = ({ comments,   }) => {
         </div>
       ))}
 
-      <div className="SHaaban-comment-section Mk-CommentSection">
-        {currentComments.map((comment) => (
-          <Comment
-            key={comment.id}
-            comment={comment}
-          />
-        ))}
-      </div>
       <div className="SHaaban-comment-section Mk-CommentSection">
         {currentComments.map((comment) => (
           <Comment
