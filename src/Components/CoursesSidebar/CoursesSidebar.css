@@ -130,7 +130,7 @@
 
     .CoursesSidebar {
         transition: all 1s ease;
-        width: 22%;
+        width: 26%;
         top: 0px;
         height: max-content;
         z-index: 50;
