@@ -777,13 +777,8 @@ const CourseSingleDetail = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [commentText, setCommentText] = useState("");
-  const [isReply, setIsReply] = useState(false);
 
-
-  const handleSubmit = () => {
-    if (isReply) {
-      handlePostReply();
-    } else {
+  const handleSubmit = () => {{
       const newComment = {
         id: comments.length + 1,
         text: commentText,
@@ -799,26 +794,6 @@ const CourseSingleDetail = () => {
     
   };
 
-  const handlePostReply = () => {
-    const updatedComments = comments.map((comment) => {
-      if (comment.id === replyCommentId) {
-        return {
-          ...comment,
-          replys: [
-            ...comment.replys,
-            {
-              id: comment.replys.length + 1,
-              replayText: commentText,
-            },
-          ],
-        };
-      }
-      return comment;
-    });
-
-    setComments(updatedComments);
-  };
-
   return (
     <>
       <div className="Mk-CourseSingleTabsAndCard">
@@ -831,9 +806,6 @@ config={[
   { header: "FAQs", component: <FAQs /> },
   { header: "Reviews", component: <Reviews
       comments={comments}
-      handleClickingOnReply={() => {}}
-      setIsReply={() => {}}
-
     />
   },
 ]}
@@ -894,7 +866,7 @@ config={[
         </form>
         <div className="SHaaban-btn-area ">
           <button onClick={handleSubmit} className="NA-btn NA-btn-effect" id="SHaaban-adding-style-for-button">
-            {isReply ? 'Post Reply' : 'Post Comment'}
+            Post Comment
           </button>
         </div>
       </div>
