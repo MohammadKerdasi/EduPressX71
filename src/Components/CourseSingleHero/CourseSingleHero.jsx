@@ -9,7 +9,7 @@ import { faClipboardQuestion } from "@fortawesome/free-solid-svg-icons";
 const CourseSingleHero = () => {
   return (
     <>
-    <div className="Mk-Course-Single-hero">
+    <div  className="Mk-Course-Single-hero">
         <div className='Mk-Container'>
         <div className='d-flex align-items-center justify-content-between Mk-Photography-by-Determined-Poitras'>
             <p className='Mk-Photography'>Photography</p>

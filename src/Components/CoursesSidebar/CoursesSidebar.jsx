@@ -65,7 +65,8 @@ useEffect(() => {
   };
 
   return (
-    <section className="CoursesSidebar-courses">
+    <section data-aos="fade-left"
+    data-aos-duration="500" className="CoursesSidebar-courses">
           {isButtonVisible && (
             <button
           className={`rb-filter-sidebar ${isSidebarVisible ? 'rb-filter-visible' : 'rb-filter-hidden'}`}
@@ -80,8 +81,8 @@ useEffect(() => {
 
 
       {isSidebarVisible && ( <div className={`CoursesSidebar `}>
-          <div>
-            <h4 className="rb-tit-sidebar">Course category</h4>
+          <div >
+            <h4  className="rb-tit-sidebar">Course category</h4>
             {['Commercial', 'Office', 'Shop', 'Educate', 'Academy', 'family', 'Studio', 'University'].map((category) => (
               <div key={category} className="rb-flex-check">
                 <div className="rb-flex-label">
