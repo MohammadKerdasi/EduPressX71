@@ -56,7 +56,7 @@
 .rb-CoursePagination .NA-FilterBar {
   position: absolute;
   top: 2%;
-  right: 15px;
+  right:0;
   background-color: white;
   width: 280px;
   min-height: 100vh;
