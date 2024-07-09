@@ -113,6 +113,7 @@ const CoursePagination = ({ searchBox, onSearchChange, items, title, x }) => {
           <button className="NA-filter-btn" onClick={showSidebar}>
             <FontAwesomeIcon icon={faFilter} />
           </button>
+          
         </div>
       </div>
 
