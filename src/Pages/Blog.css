@@ -56,7 +56,7 @@
 .rb-CoursePagination .NA-FilterBar {
   position: absolute;
   top: 2%;
-  right:0;
+  right: 0;
   background-color: white;
   width: 280px;
   min-height: 100vh;
@@ -89,6 +89,7 @@
   .NA-blog .rb-listing .NA-article-card-content .NA-span2 {
     font-size: 11px;
   }
+  
 }
 
 /* media for filter bar */
@@ -98,12 +99,12 @@
   }
   .NA-blog .search-view .NA-filter-btn {
     display: inline !important;
-    font-size: 19px;
+    font-size: 6px;
   }
   .rb-CoursePagination .NA-FilterBar {
     display: inline;
   }
-  
+
 }
 
 /* medium screen */
@@ -119,7 +120,9 @@
   .NA-blog .rb-listing .NA-article-card-content .NA-span2 {
     font-size: 11px;
   }
- 
+  .NA-blog .rb-listing .NA-article-card-content h3 {
+    font-size: 15px !important
+  }
 }
 
 /* small screen */
@@ -142,6 +145,9 @@
   .NA-blog .NA-FilterBar .SHaaban-recent-post-body {
     flex-direction: column;
     align-items: baseline;
+  }
+  .NA-blog .rb-listing .NA-article-card-content h3 {
+    font-size: 15px !important
   }
 }
 

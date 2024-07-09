@@ -13,7 +13,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ArticlesCards from "../ArticlesCards/ArticlesCards";
 import FilterBar from "../FilterBar/FilterBar";
-import { useMediaQuery } from 'react-responsive';
+import { useMediaQuery } from "react-responsive";
 import NoResult from './../../../public/assetsProject/imges/noResult.jpg'
 // nahla
 import AOS from "aos";
@@ -21,27 +21,27 @@ import "aos/dist/aos.css";
 // ----------------------------------------
 
 const CoursePagination = ({ searchBox, onSearchChange, items, title, x }) => {
- // nahla
-useEffect(() => {
-  AOS.init({ duration: 500 });
-}, []);
-// ----------------------------------------
+  // nahla
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+  // ----------------------------------------
 
   const isMobileView = useMediaQuery({ maxWidth: 767 });
-  const [view, setView] = useState('NA-feature-card');
+  const [view, setView] = useState("NA-feature-card");
   const [currentPage, setCurrentPage] = useState(1);
   const recordsPerPage = 6;
   const totalPages = Math.ceil(items.length / recordsPerPage);
 
   useEffect(() => {
     if (isMobileView) {
-      setView('NA-feature-card');
+      setView("NA-feature-card");
     }
   }, [isMobileView]);
 
   const handleButtonClick = (viewType) => {
     if (!isMobileView) {
-      setView(viewType === 1 ? 'NA-feature-card' : 'rb-listing');
+      setView(viewType === 1 ? "NA-feature-card" : "rb-listing");
     }
   };
 
@@ -110,6 +110,7 @@ useEffect(() => {
             </svg>
           </button>
 
+          {/* nahla */}
           <button className="NA-filter-btn" onClick={showSidebar}>
             <FontAwesomeIcon icon={faFilter} />
           </button>

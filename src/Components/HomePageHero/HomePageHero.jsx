@@ -16,7 +16,7 @@ import { useEffect } from "react";
 
 export default function HomePageHero() {
   useEffect(() => {
-    AOS.init({ duration: 500 });
+    AOS.init({ duration: 700 });
   }, []);
   return (
     <header className="NA-header">
@@ -32,12 +32,12 @@ export default function HomePageHero() {
      data-aos-duration="1000">Online Course</span>
           </h1>
           <p data-aos="fade-right"
-     data-aos-duration="1500">
+     data-aos-duration="1200">
             We denounce with righteous indignation and dislike men who are so
             beguiled and demoralized that cannot trouble.
           </p>
           <button data-aos="fade-right"
-     data-aos-duration="2000" className="NA-btn NA-btn-effect">Posts comment</button>
+     data-aos-duration="1200" className="NA-btn NA-btn-effect">Posts comment</button>
         </div>
         <div className="NA-hero-img" data-aos="fade-left">
           <img className="NA-Homeherogirl1" src={heroGirl} alt="student girl" />
