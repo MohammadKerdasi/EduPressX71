@@ -50,12 +50,9 @@
 .NA-filter-btn {
   display: none;
 }
-.NA-FilterBar {
-  transition: display 0.5s;
-}
 .rb-CoursePagination .NA-FilterBar {
   position: absolute;
-  top: 2%;
+  top: 0;
   right: 0;
   background-color: white;
   width: 280px;
@@ -99,7 +96,7 @@
   }
   .NA-blog .search-view .NA-filter-btn {
     display: inline !important;
-    font-size: 6px;
+    font-size: 10px;
   }
   .rb-CoursePagination .NA-FilterBar {
     display: inline;
