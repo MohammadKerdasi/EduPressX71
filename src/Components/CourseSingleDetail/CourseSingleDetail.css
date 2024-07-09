@@ -760,6 +760,10 @@ color: var(--main-color);
     {
       font-size: 10px !important;
     }
+    .Mk-SingleCourseAnswer p 
+    {
+      font-size: 12px !important;
+    }
   
   }
   /* @media (max-width:440px){
