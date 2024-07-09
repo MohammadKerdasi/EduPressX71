@@ -628,7 +628,7 @@ const PaginationReviews = ({
 
 const Reviews = ({ comments,   }) => {
   const [currentPage, setCurrentPage] = useState(1);
-  const commentsPerPage = 3; // Updated to 3 comments per page
+  const commentsPerPage = 2; 
 
   const indexOfLastComment = currentPage * commentsPerPage;
   const indexOfFirstComment = indexOfLastComment - commentsPerPage;
@@ -648,7 +648,6 @@ const Reviews = ({ comments,   }) => {
     <>
         <h4 className="Mk-ReviewsHeading">Comments</h4>
       <div className="Mk-40Rating">
-        {/* Use CountUp for animated rating value */}
         <h1>
 
           <CountUp className="Mk-CountUp40" start={0} end={4.0} decimals={1} duration={2} />
@@ -663,7 +662,6 @@ const Reviews = ({ comments,   }) => {
           </div>
           <p>
             based on{' '}
-            {/* Use CountUp for animated ratings count */}
             <CountUp className="Mk-CountUp" start={0} end={146951} duration={2} separator="," />
             {' '}ratings
           </p>
@@ -681,7 +679,6 @@ const Reviews = ({ comments,   }) => {
               />
             ))}
           </span>
-          {/* Use CountUp for animated percentage with % */}
           <span className="Mk-NumOfRate">
             <CountUp start={0} end={percentage} duration={1} suffix="%" />
           </span>
@@ -850,7 +847,7 @@ config={[
 ]}
 />
         </div>
-        <div className="Mk-CourseSingleCard">
+        <div className="Mk-CourseSingleCard" data-aos="zoom-in" data-aos-duration="1000">
           <Card className="Mk-CardStyling">
             <Card.Img
               className="Mk-CardImg"

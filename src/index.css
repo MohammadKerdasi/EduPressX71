@@ -86,11 +86,17 @@ a {
 /* large screen */
  @media (min-width: 993px) and (max-width: 1367px) {
   .Project-Container   {
-    padding: 60px 16%  16% ;
+    padding: 40px 16% 70px 16%;
   } 
   .ra-nav-Container{
     padding: 10px 16% !important ;
    }
+   .Mk-Container {
+    padding: 50px 16% !important ;
+}
+.Project-Container-FAQs {
+  padding: 0px 16%;
+}
  }
   /* .Project-Container {
     padding: 60px 12%;
@@ -112,31 +118,49 @@ a {
 /* medium screen */
  @media (min-width: 769px) and (max-width: 992px) {
   .Project-Container {
-    padding: 60px 14% 90px 14%;
+    padding: 40px 14% 70px 14%;
   }
   .ra-nav-Container {
     padding: 10px 14% !important ;
   }
+  .Mk-Container {
+    padding: 50px 14% !important ;
+}
+.Project-Container-FAQs {
+  padding: 0px 14%;
+}
 } 
 
 /* small screen */
 @media (min-width: 421px) and (max-width: 768px) {
   .Project-Container {
-    padding: 60px 10% 90px 10%;
+    padding: 20px 10% 50px 10%;
   }
   .ra-nav-Container {
-    padding: 5px 10% !important;
+    padding: 5px 7% !important;
   }
+  .Mk-Container {
+    padding: 50px 10% !important ;
+}
+.Project-Container-FAQs {
+  padding: 0px 10%;
+}
 }
 
 @media (max-width: 420px) {
   .Project-Container {
-    padding: 60px 10%;
+    padding: 60px 7%;
   }
   .Project-Container-FAQs {
-    padding: 0px 10%;
+    padding: 0px 7% !important ;
   }
   .ra-nav-Container {
-    padding: 5px 10% !important;
+    padding: 5px 7% !important;
   }
+  .Mk-Container {
+    padding: 50px 7% !important ;
+}
+.Project-Container-FAQs {
+  padding: 0px 7%;
+}
 }

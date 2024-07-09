@@ -143,6 +143,9 @@
     padding: 10px 20px;
     font-size: 14px;
   }
+  .NA-Project-Container {
+    padding: 2.8125em 16%;
+  }
 }
 
 /* medium screen */

@@ -5,8 +5,17 @@ import { faGraduationCap } from "@fortawesome/free-solid-svg-icons";
 import { faSignal } from "@fortawesome/free-solid-svg-icons";
 import { faPaste } from "@fortawesome/free-solid-svg-icons";
 import { faClipboardQuestion } from "@fortawesome/free-solid-svg-icons";
-
+// nahla
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+// -------------------------------
 const CourseSingleHero = () => {
+      // nahla
+useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+  // -------------------------------
   return (
     <>
     <div  className="Mk-Course-Single-hero">
@@ -15,10 +24,10 @@ const CourseSingleHero = () => {
             <p className='Mk-Photography'>Photography</p>
             <p className='Mk-by'>by <span>Determined-Poitras</span></p>
         </div>
-        <div className='Mk-hero-heading'>
+        <div className='Mk-hero-heading' data-aos="fade-up">
             <h1>The Ultimate Guide to the best WordPress LMS Plugin</h1>
         </div>
-        <div className='w-100'>
+        <div className='w-100' data-aos="fade-up"  data-aos-duration="900">
             <ul className='Mk-ul'>
                 <li className='Mk-list-item'><FontAwesomeIcon icon={faClock} style={{color: "var(--main-color)",}} /> <span> 2 Weeks </span> </li>
                 <li className='Mk-list-item'><FontAwesomeIcon icon={faGraduationCap} style={{color: "var(--main-color)",}} /><span> 156 Students </span> </li>

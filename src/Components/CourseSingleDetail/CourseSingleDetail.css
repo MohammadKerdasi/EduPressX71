@@ -3,11 +3,13 @@
   display: flex;
   justify-content: space-between;
  gap: 30px; 
+ position: relative;
 }
 .Mk-CommentsAndTabs
 {
   width: 65%;
   border-radius: 20px 20px 0px 0px;
+ 
 }
 .Mk-tabs {
     width: 100%;
@@ -61,7 +63,7 @@
   .Mk-CourseSingleCard
   {
     width: 35%;
-    position: relative;
+    /* position: relative; */
     
   }
   .Mk-CardStyling
@@ -554,11 +556,12 @@ color: var(--main-color);
     justify-content: center;
     align-items: flex-start;
     width: 100%;
+    /* margin-top: 80px; */
   }
   .Mk-CardStyling
   {
     position: static;
-    flex-direction: row;
+    width: 250px;
   }
   .Mk-CourseSingleCard
   {
@@ -570,9 +573,14 @@ color: var(--main-color);
   }
   .Mk-CardBody
   {
-    flex-direction: column;
-    justify-content: space-evenly;
+    /* flex-direction: column;
+    justify-content: space-evenly; */
     padding: 20px ;
+  }
+  .Mk-CourseSingleCard {
+    position: static;
+    right: 20%;
+    top: 8%;
   }
   .Mk-FormArea
   {
@@ -595,8 +603,6 @@ color: var(--main-color);
     height: 48px !important;
 
   }
-  
-
 
 }
 @media (max-width: 848px){
@@ -605,10 +611,7 @@ color: var(--main-color);
    flex-direction: row;
    padding: 30px;
   }
-  .Mk-CardStyling
-  {
-    flex-direction: column;
-  }
+ 
   .Mk-CardText
   {
     margin: 0px;
@@ -617,7 +620,6 @@ color: var(--main-color);
   {
     width: 100%;
   }
- 
   .Mk-tab-header
   {
     flex-wrap: nowrap;
@@ -687,11 +689,16 @@ color: var(--main-color);
       flex-direction: column;
       align-items: flex-end;
     }
- 
     
   }
   
   @media (max-width: 480px) {
+    .Mk-CardStyling {
+      position: absolute;
+      width: 250px;
+      top: -90px;
+      right: -10px;
+  }
     .Mk-CheckBoxandP
     {
       display: flex;
@@ -708,12 +715,29 @@ color: var(--main-color);
     .Mk-CardBody
     {
      flex-direction: row;
-     padding: 10px;
+     padding: 15px;
     }
     .Mk-CardBtn
     {
-      width: max-content;
+      width: max-content !important;
+      padding: 7px 12px;
+      font-size: 9px;
+
     }
+    .Mk-CommentsAndTabs {
+      margin-top: 35px;
+  }
+    .Mk-CardText {
+      justify-content: normal;
+      align-items: center;
+      gap: 2px;
+  }
+    .Mk-CardText span {
+      font-size: 10px;
+  }
+  .Mk-CardText h4 {
+    font-size: 12px;
+}
     .Mk-SingleCourseQuestion
     {
       padding: 10px !important;
@@ -763,6 +787,10 @@ color: var(--main-color);
     .Mk-SingleCourseAnswer p 
     {
       font-size: 12px !important;
+    }
+    .Mk-tabs
+    {
+      padding-top: 70px;
     }
   
   }
