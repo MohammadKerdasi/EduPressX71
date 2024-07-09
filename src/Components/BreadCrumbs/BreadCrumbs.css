@@ -43,7 +43,7 @@
 
 @media (min-width: 1368px) and (max-width: 1500px){
   .breadcrumb-container {
-    padding: 20px 16.4063%;
+    padding: 20px 16%;
   }
   }
 /* large screen */
@@ -60,7 +60,6 @@
   
 }
 
-
 }
 
 
@@ -68,7 +67,7 @@
 /* medium screen */
 @media (min-width: 769px) and (max-width: 992px) {
   .breadcrumb-container {
-    padding: 20px 14% ;
+    padding: 20px 14% !important ;
     font-size: 10px;
 }
 .breadcrumb-item.active {
@@ -86,7 +85,7 @@
 
   .breadcrumb-container {
     font-size: 10px;
-    padding: 20px 10% ;
+    padding: 20px 10% !important;
 }
 .breadcrumb-item.active {
 
@@ -103,10 +102,10 @@
 }
 
 
-@media (max-width: 420px) {
+@media (max-width: 576px) {
 
   .breadcrumb-container{
-    padding: 20px 12%;
+    padding: 20px 7% !important;
     font-size: 11px;
   }
   .breadcrumb-item.active {

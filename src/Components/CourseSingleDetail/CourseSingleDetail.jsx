@@ -826,7 +826,7 @@ config={[
 ]}
 />
         </div>
-        <div className="Mk-CourseSingleCard">
+        <div className="Mk-CourseSingleCard" data-aos="zoom-in" data-aos-duration="1000">
           <Card className="Mk-CardStyling">
             <Card.Img
               className="Mk-CardImg"
