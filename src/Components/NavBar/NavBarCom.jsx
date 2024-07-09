@@ -67,8 +67,8 @@ export default function NavBarCom() {
                                 </NavDropdown.Item>
                             </NavDropdown>
                         </h5>
-                        <Link className='rb-nav-link' to={'#'} onClick={handleNavLinkClick}><h5>LearnPress Add-On</h5></Link>
-                        <Link className='rb-nav-link' to={'#'} onClick={handleNavLinkClick}><h5>Premium Theme</h5></Link>
+                        <Link className='rb-nav-link' to={'/Error'} onClick={handleNavLinkClick}><h5>LearnPress Add-On</h5></Link>
+                        <Link className='rb-nav-link' to={'/Error'} onClick={handleNavLinkClick}><h5>Premium Theme</h5></Link>
                     </Nav>
                     <div className="d-flex">
                         <Link className='rb-log-reg' to={'/LoginRegister'} onClick={handleNavLinkClick}>Login/Register</Link>

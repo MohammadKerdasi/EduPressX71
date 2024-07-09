@@ -72,7 +72,7 @@ import React from 'react';
       <Form.Group className="mb-3" controlId="formBasicCheckbox">
         <Form.Check className='nz-check' type="checkbox" label="Remember me" />
       </Form.Group>
-      <Button className='nz-but'  type="submit">
+      <Button className='nz-but NA-btn-effect'  type="submit">
         Login
       </Button>
       <Form.Text className="text-muted">
@@ -107,7 +107,7 @@ import React from 'react';
       </Form.Group>
 
       
-      <Button className='nz-but' type="submit">
+      <Button className='nz-but NA-btn-effect' type="submit">
         Register
       </Button>
       <span>{result2}</span>

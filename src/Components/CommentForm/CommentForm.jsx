@@ -39,7 +39,7 @@ import './CommentForm.css'
             <Form.Check aria-label="option 1" />
             <p>Save my name, email in this brower for the next time I comment</p>
             </div>
-            <button className="MK-Contact-Btn">
+            <button className="MK-Contact-Btn NA-btn-effect">
                 <p>Posts comment</p>
             </button>
         </Form>

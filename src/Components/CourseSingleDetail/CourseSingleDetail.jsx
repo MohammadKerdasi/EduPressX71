@@ -85,7 +85,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -100,7 +100,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -115,7 +115,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -130,7 +130,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -145,7 +145,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -168,7 +168,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -183,7 +183,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -198,7 +198,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -221,7 +221,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -236,7 +236,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -251,7 +251,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -266,7 +266,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -281,7 +281,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -304,7 +304,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -319,7 +319,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -334,7 +334,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -349,7 +349,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -364,7 +364,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -387,7 +387,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -402,7 +402,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span">12:30</span>
@@ -417,7 +417,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -432,7 +432,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>
@@ -447,7 +447,7 @@ const Curriculum = () => {
               <span>Lessons with video content</span>
             </div>
             <div className="Mk-Priview">
-              <button className="MK-Accordion-btn">
+              <button className="MK-Accordion-btn NA-btn-effect">
                 <p>Preview</p>
               </button>
               <span className="Mk-Li-Span Mk-225">2:25</span>

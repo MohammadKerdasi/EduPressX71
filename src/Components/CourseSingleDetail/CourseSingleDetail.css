@@ -525,10 +525,6 @@ color: var(--main-color);
 {
   margin-left: 10px;
 }
-.MK-Accordion-btn:hover
-{
-  background-color: var(--main-color);
-}
 .MK-Accordion-btn:hover p
 {
   color: white;
