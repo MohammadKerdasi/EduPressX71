@@ -101,7 +101,7 @@ a {
 
 
 /* large screen */
- @media (min-width: 993px) and (max-width: 1367px) {
+ @media (min-width: 993px) and (max-width: 1467px) {
   .Project-Container   {
     padding: 40px 16% 70px 16%;
   } 
@@ -149,7 +149,7 @@ a {
 } 
 
 /* small screen */
-@media (min-width: 421px) and (max-width: 768px) {
+@media (min-width: 577px) and (max-width: 768px) {
   .Project-Container {
     padding: 20px 10% 50px 10%;
   }
@@ -164,7 +164,7 @@ a {
 }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 576px) {
   .Project-Container {
     padding: 60px 7%;
   }

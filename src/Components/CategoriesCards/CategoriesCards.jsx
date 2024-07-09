@@ -84,7 +84,7 @@ export default function CategoriesCards() {
 
   return (
     <section className="NA-categoriesCards-Section NA-Project-Container">
-      <Title header="top categories" desc="Explore our Popular Categories" btn=" all categories " showBtn={true} link="/{}"/>
+      <Title header="top categories" desc="Explore our Popular Categories" btn=" all categories " showBtn={true} link="/Error"/>
         <div className="NA-categoriesCards NA-flex">
             {CategoriesCards.map ((item) => {
                 return (
@@ -96,7 +96,7 @@ export default function CategoriesCards() {
                 )
             })}
         </div>
-        <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/{}">All Categories</Link>
+        <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/Error">All Categories</Link>
     </section>
   );
 }

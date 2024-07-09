@@ -15,17 +15,33 @@ import CourseSingle from "./Pages/CourseSingle.jsx";
 import BlogSingle from "./Pages/BlogSingle.jsx";
 import Errorpage from "./Pages/Errorpage.jsx";
 import LoginandRegister from "./Pages/LoginRegister.jsx";
+import { useEffect, useState } from "react";
+import Loader from "./Components/Loader/Loader.jsx";
 
 function App() {
+  const [isLoading, setIsLoading] = useState(true)
+  useEffect(() => {
+    const fakeDataFetch = () => {
+      setTimeout(() => {
+        setIsLoading(false)
+      }, 4000)
+    }
+
+    fakeDataFetch()
+  }, [])
+
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
       behavior: "smooth",
     });
   };
-  return (
-    <>
-      <section className="app">
+  return isLoading ? (
+    <Loader />  
+  )
+   :
+   (
+<section className="app">
         <ScrollToTop />
         <button onClick={scrollToTop} className="rb-scroll-to-top-button">
           <FontAwesomeIcon icon={faArrowUp} />
@@ -44,8 +60,7 @@ function App() {
         </Routes>
         <Footer />
       </section>
-    </>
-  );
+   )
 }
 
 export default App;

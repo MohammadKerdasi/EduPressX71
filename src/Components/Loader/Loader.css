@@ -1,0 +1,57 @@
+.NA-loader {
+    position: fixed;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.NA-svg-wrapper {
+  position: relative;
+  display: inline-block;
+  width: max-content;
+  overflow: hidden;
+  mix-blend-mode: darken;
+  position: relative;
+  margin-right: 3px;
+}
+.NA-svg-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.6),
+    rgba(255, 255, 255, 0.2)
+  );
+  transform: skewX(-25deg);
+  z-index: 2;
+  animation: shine 1s ease-in infinite;
+}
+svg {
+    animation: move 1s ease-in ;
+}
+.NA-Title {
+  margin: 0 ; /*taking off bootstrap value*/
+}
+@keyframes shine {
+    0% {
+        left: -110%;
+    }
+    100% {
+        left: 110%;
+    }
+}
+@keyframes move {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

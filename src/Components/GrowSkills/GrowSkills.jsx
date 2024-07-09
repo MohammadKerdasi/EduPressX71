@@ -1,25 +1,16 @@
 // for css
 import "./GrowSkills.css";
 
-// nahla
-import React, { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-// -------------------------------
 // for images
 import growSkillsPic from "./../../../public/assetsProject/imges/lastArticles-Grow-us.png";
 import check from "./../../../public/assetsProject/imges/check-vector.png";
 
 export default function GrowSkills() {
-  // nahla
-useEffect(() => {
-  AOS.init({ duration: 500 });
-}, []);
+
   return (
-// -------------------------------
     <section className="NA-growskills-Section NA-Project-Container NA-flex">
       <div className="NA-grow-img" >
-        <img src={growSkillsPic} alt="grow your skills" data-aos="zoom-in-right"/>
+        <img src={growSkillsPic} alt="grow your skills"/>
       </div>
       <div className="NA-grow-content">
         <h2 className="NA-flex">
