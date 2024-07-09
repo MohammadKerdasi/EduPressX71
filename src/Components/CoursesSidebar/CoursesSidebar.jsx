@@ -71,7 +71,7 @@ const CoursesSidebar = ({ filters, onFilterChange }) => {
       )}
 
 
-      {isSidebarVisible && ( <div className={`CoursesSidebar `}>
+      {isSidebarVisible && ( <div data-aos="fade-left" className={`CoursesSidebar `}>
           <div>
             <h4 className="rb-tit-sidebar">Course category</h4>
             {['Commercial', 'Office', 'Shop', 'Educate', 'Academy', 'family', 'Studio', 'University'].map((category) => (
