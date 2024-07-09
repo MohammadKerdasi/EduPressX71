@@ -1,11 +1,14 @@
 /* -------------------------------------------------------------------------------- */
+.Courses .rb-CoursePagination {
+  width: 990px;
+}
 .rb-CoursePagination .NA-feature-card-deatails div {
   width: 80%;
 }
 .rb-listing{ 
   width: 100%; 
   height: 250px; 
-  margin:  0; 
+  margin-bottom:  30px; 
   display: flex; 
   border-radius: 20px; 
   border: 1px solid var(--light-gray); 
@@ -16,19 +19,19 @@
   -o-transition: all .5s; 
 
 } 
-.rb-listing .NA-feature-card-img img ,.rb-listing .NA-article-card-img img{
+.rb-listing .NA-feature-card-img img {
   width: 100%;
 }
 .rb-listing .NA-feature-card-content { 
 padding: 20px; 
 width: 59%;
 } 
-.rb-listing  .NA-feature-card-img,.rb-listing .NA-article-card-img { 
+.rb-listing  .NA-feature-card-img { 
 position: relative; 
 width: max-content; 
 } 
 
-.rb-listing  .NA-feature-card-img img ,.rb-listing .NA-article-card-img img{ 
+.rb-listing  .NA-feature-card-img img { 
 height: 249px; 
 /* height: 248px; */
 width: 410px;
@@ -36,7 +39,7 @@ border-radius: 14px 0 0 14px;
 } 
  
 .rb-CoursePagination .NA-feature-card { 
-  width: 47%;} 
+  width: 47% !important;} 
 
 .rb-listing .NA-feature-card-content > div:nth-child(1) { 
 padding-bottom: 0; 
@@ -50,14 +53,14 @@ padding-top: 16px;
 justify-content: space-between; 
 gap:0; 
 } 
+.rb-listing .NA-card-price a {
+  color: black;
+}
 .rb-listing .NA-feature-card-deatails{ 
 padding-bottom: 67px; 
 }
-.rb-CoursePagination .NA-featuredCards,.rb-CoursePagination .NA-articlesCards  { 
-  justify-content: center; 
-  align-items: center; 
-  flex-wrap: wrap; 
-  gap: 30px;
+.rb-CoursePagination .NA-featuredCards { 
+  /* gap: 30px; */
   }
   .rb-listing .NA-feature-card-img img {
     width: 100%;
@@ -87,7 +90,6 @@ padding-bottom: 67px;
     width: 270px;
 }
 
-/* .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox:, */
 .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox:hover ,
 .rb-CoursePagination .rb-CoursePagination-head .search-view .rb-search-with-icone .rb-searchbox:focus-visible{
   outline: none;
@@ -170,16 +172,7 @@ padding-bottom: 67px;
      padding-left: 0rem;
     }
 
-    .rb-CoursePagination  .NA-feature-card-content > div .NA-card-title
-    ,.NA-article-card-content h4 {
-      font-size: 20px;
-      margin-bottom: 16px;}
-
-      .rb-CoursePagination .NA-feature-card{
-         margin:0 ;
-      }
       .NA-icon-desc {
-
         width: max-content;
     }
     .rb-listing .NA-article-card-content{
@@ -212,7 +205,7 @@ padding-bottom: 67px;
 }
 
   .rb-CoursePagination .NA-feature-card{
-    width: 47%;
+    width: 47% !important;
   }
   .rb-CoursePagination .NA-card-price a {
     font-size: 16px;}
@@ -233,9 +226,8 @@ padding-bottom: 67px;
  .rb-CoursePagination .NA-card-price .free{
   font-size: 16px;
 }
-.rb-CoursePagination .NA-featuredCards,
-.rb-CoursePagination .NA-articlesCards {
-  gap: 11px;
+.rb-CoursePagination .NA-featuredCards {
+  /* gap: 11px; */
 }
 
  /* ----------------list------------------------ */
@@ -285,7 +277,7 @@ padding-bottom: 67px;
 
 
     .rb-CoursePagination .NA-feature-card {
-        width: 48.171%;
+        width: 47% !important;
 
     }
 
@@ -310,10 +302,6 @@ padding-bottom: 67px;
  .rb-CoursePagination .NA-card-price .discount,
  .rb-CoursePagination .NA-card-price .free{
   font-size: 13px;
-}
-.rb-CoursePagination .NA-featuredCards
-,.rb-CoursePagination .NA-articlesCards  {
-  gap: 22px;
 }
    /* ----------------list------------------------ */
   .rb-CoursePagination .rb-CoursePagination-head h1 {
@@ -403,7 +391,7 @@ padding-bottom: 67px;
 @media only screen and (min-width: 768px) and  (max-width: 991px){
 
     .rb-CoursePagination .NA-feature-card {
-        width: 48.171% !important;
+        width: 47% !important;
 
     }
 
@@ -420,9 +408,8 @@ padding-bottom: 67px;
   font-size: 12px;
 }
 
-.rb-CoursePagination .NA-featuredCards
-,.rb-CoursePagination .NA-articlesCards  {
-  gap: 12px;
+.rb-CoursePagination .NA-featuredCards  {
+  /* gap: 8px; */
 }
 /* ----------------list------------------------ */
   .rb-CoursePagination .rb-listing {
@@ -504,7 +491,6 @@ padding-bottom: 67px;
   gap: 15px;
 }
 .rb-CoursePagination .rb-CoursePagination-head {
-  gap: 156px;
   margin-bottom: 27px;
 }
 .rb-CoursePagination .rb-ul-pagination li,.rb-CoursePagination .rb-ul-pagination .rb-PageActive {
@@ -525,16 +511,11 @@ padding-bottom: 67px;
   margin-bottom: 6px;
 }
 
-/* .rb-listing .NA-feature-card-deatails div { */
-  /* margin-right: 8px; */
-  /* display: flex; */
-  /* align-items: center; */
-/* } */
 }
 /* ============================================================================================== */
 @media only screen and (min-width: 577px) and  (max-width: 767px){
   .rb-CoursePagination .NA-feature-card {
-    width: 48.5% !important;
+    width: 340px !important;
 }
 .NA-feature-card .NA-feature-card-content {
   padding: 9px;
@@ -548,7 +529,7 @@ padding-bottom: 67px;
   font-size: 10px;
 }
 .rb-CoursePagination.NA-date-icon  {
-  align-items: stretch;
+  align-items: baseline;
 }
 
 
@@ -568,8 +549,7 @@ padding-bottom: 67px;
   margin-bottom: 5px;
   font-size: 11px;
 }
-.rb-CoursePagination .NA-featuredCards
-,.rb-CoursePagination .NA-articlesCards {
+.rb-CoursePagination .NA-featuredCards{
   gap: 13px;
 }
 
@@ -588,10 +568,7 @@ padding-bottom: 67px;
 }
 
 .rb-CoursePagination .rb-CoursePagination-head {
-  align-items: baseline;
-  gap: 0px;
-  margin-bottom: 9px;
-  justify-content: space-between;
+  margin-bottom: 20px;
  /*  */
 }
 .rb-CoursePagination .rb-ul-pagination li,.rb-CoursePagination .rb-ul-pagination .rb-PageActive {
@@ -604,30 +581,11 @@ padding-bottom: 67px;
     gap: 2px;
     margin-top: 8px;
 }
-/* --------------article--------------------- */
-.rb-CoursePagination .NA-article-card-content {
-  padding: 10px;
-  gap: 1px;
-
 }
-.rb-CoursePagination  .NA-date-icon img {
-  width: 14px;
-  height: 14px;
-}
-.rb-CoursePagination .NA-article-card-content p {
-  font-size: 13px;
-}
-.NA-article-card-content h4 {
-  font-size: 11px;
-  width: 242px;
-  margin-bottom: 8px;
-}
-}
-/* ================================================================================================= */
 @media (max-width: 576px){
 
   .rb-CoursePagination .NA-feature-card {
-    width: 100%;
+    width: 100% !important;
 }
 
 .rb-CoursePagination  .NA-feature-card .NA-feature-card-content ,
@@ -663,8 +621,8 @@ padding-bottom: 67px;
   font-size: 11px;
 }
 .rb-CoursePagination .NA-featuredCards
-,.rb-CoursePagination .NA-articlesCards {
-  gap: 13px;
+{
+  gap: 0;
 }
 .NA-article-card-content h4 {
   font-size: 11px;

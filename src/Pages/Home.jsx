@@ -141,7 +141,7 @@ export default function Home() {
     <>
       <HomePageHero />
       <CategoriesCards />
-      <section className="NA-featuredCards-Section NA-Project-Container block">
+      <section className="NA-featuredCards-Section NA-Project-Container">
         <Title
           header="featured courses"
           desc="Explore our Popular courses"
@@ -149,7 +149,7 @@ export default function Home() {
           showBtn={true}
           link="/Courses"
         />
-        <FeaturedCoursesCards FeaturedCards={FeaturedCards} className="block" />
+        <FeaturedCoursesCards FeaturedCards={FeaturedCards} />
         <Link className="NA-header-btn NA-btn-effect NA-hidden-btn" to="/Courses">
           all courses
         </Link>
@@ -162,7 +162,7 @@ export default function Home() {
       <StudentsFeedback  />
       <StartAcademy  />
 
-      <section className="NA-articlesCards-Section NA-Project-Container block">
+      <section className="NA-articlesCards-Section NA-Project-Container">
         <Title
           header="latest articles"
           desc="Explore our Free Acticles"

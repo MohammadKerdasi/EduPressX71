@@ -1,3 +1,7 @@
+// nahla
+import AOS from "aos";
+import "aos/dist/aos.css";
+// -------------------------------
 import React, { useState,useEffect } from 'react';
 import './CoursesSidebar.css'
 import './../../index.css'
@@ -5,7 +9,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faFilter,faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const CoursesSidebar = ({ filters, onFilterChange }) => {
-
+// nahla
+useEffect(() => {
+  AOS.init({ duration: 500 });
+}, []);
+// -------------------------------
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 

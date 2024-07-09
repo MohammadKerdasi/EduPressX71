@@ -73,6 +73,7 @@
   } 
   .NA-article-card {
     width: 310px !important;
+    margin: 0;
   }
   .NA-article-card-content h3 {
     font-size: 16px !important;
