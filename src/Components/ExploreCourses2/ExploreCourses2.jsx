@@ -11,7 +11,7 @@ import card6 from "./../../../public/assetsProject/imges/educationTheme-image 10
 
 export default function ExploreCourses2() {
     return (
-      <div className="NA-Project-Container block">
+      <div className="NA-Project-Container">
         <div className="NA-ExploreCourses2 NA-flex">
           <div className="NA-ExploreCourses-text">
             <p className="NA-ExploreCourses-subtitle">PROVIDING AMAZING</p>

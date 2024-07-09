@@ -1,4 +1,9 @@
-import React from "react";
+// nahla
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+// ----------------------------------------
+
 import "./FilterBar.css";
 import TagsH from "./../TagsH/Tags";
 
@@ -39,8 +44,14 @@ export default function FilterBar(props) {
       recentPostText: "Best LearnPress WordPress Theme Collection for 2023",
     },
   ];
+// nahla
+    useEffect(() => {
+      AOS.init({ duration: 500 });
+    }, []);
+// ----------------------------------------
+
   return (
-    <div className="NA-FilterBar">
+    <div className="NA-FilterBar" data-aos="fade-left">
       <FontAwesomeIcon className='NA-filter-icon' icon={faArrowRight} onClick={props.onClick} />
 
       <div className="SHaaban-category-area">

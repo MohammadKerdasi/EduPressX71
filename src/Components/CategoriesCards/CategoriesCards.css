@@ -1,6 +1,7 @@
 .NA-categoriesCards {
   flex-wrap: wrap;
   justify-content: space-between;
+  gap: 0 15px;
 }
 .NA-categories-card {
   width: 234px !important;

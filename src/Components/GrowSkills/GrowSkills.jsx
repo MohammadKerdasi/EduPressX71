@@ -7,7 +7,7 @@ import check from "./../../../public/assetsProject/imges/check-vector.png";
 
 export default function GrowSkills() {
   return (
-    <section className="NA-growskills-Section NA-Project-Container NA-flex block">
+    <section className="NA-growskills-Section NA-Project-Container NA-flex">
       <div className="NA-grow-img">
         <img src={growSkillsPic} alt="" />
       </div>

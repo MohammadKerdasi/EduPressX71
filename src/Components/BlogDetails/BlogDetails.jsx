@@ -29,9 +29,18 @@ import Card10 from "./../../../public/assetsProject/imges/card(10).png";
 import Card5 from "./../../../public/assetsProject/imges/card(5).png";
 import GirlImg from "./../../../public/assetsProject/imges/card(12).png";
 import ReplayIcon from "./../../../public/assetsProject/imageFromHaidar/Vector.svg";
-
+// nahla
+import AOS from "aos";
+import "aos/dist/aos.css";
+// ----------------------------------------
 
 export default function BlogDtails() {
+// nahla
+useEffect(() => {
+  AOS.init({ duration: 500 });
+}, []);
+// ----------------------------------------
+
   // مصفوفة مسارات الصور للتبديل بين الصور عند النقر على المقالة السابقة واللاحقة
   const MainImages = [
     
@@ -352,12 +361,12 @@ export default function BlogDtails() {
   }
 
   return (
-    <>
+    <div > 
       <div>
         <ShowFilter />
       </div>
       <div className="SHaaban-LISTING">
-        <div className="SHaaban-detail">
+        <div className="SHaaban-detail" data-aos="fade-right">
           <div className="SHaaban-title-and-meta">
             <h1>Best LearnPress WordPress Theme Collection for 2023</h1>
             <div className="SHaaban-title-and-meta-info-container">
@@ -659,6 +668,6 @@ export default function BlogDtails() {
           <FilterBar />
         </div>
       </div>
-    </>
+    </div>
   );
 }

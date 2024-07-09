@@ -1,10 +1,4 @@
 /* src/components/Footer.rb-css */
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  /* scroll-behavior: smooth; */
-}
 .rb-footer {
   position: relative;
   width: 100%;

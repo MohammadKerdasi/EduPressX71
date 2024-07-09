@@ -15,11 +15,9 @@
   background-color: var(--white-grey);
 }
 .NA-blog .NA-feature-card {
-  width: 47% !important;
+  width: 48.5% !important;
 }
 .rb-listing .NA-article-card-img {
-  position: relative;
-  width: 410px;
   height: 100%;
 }
 .rb-listing .NA-article-card-content {
@@ -78,7 +76,10 @@
 
 /* large screen */
 @media (min-width: 993px) and (max-width: 1489px) {
- 
+  .NA-blog .NA-FilterBar .SHaaban-recent-post-body {
+    flex-direction: column;
+    align-items: baseline;
+  }
   .NA-blog .rb-CoursePagination {
     width: 80%;
   }
@@ -92,8 +93,8 @@
 
 /* media for filter bar */
 @media (min-width: 200px) and (max-width: 1111px) {
-  .NA-blog .rb-CoursePagination {
-    width: 100%;
+.rb-CoursePagination {
+    width: 100% !important;
   }
   .NA-blog .search-view .NA-filter-btn {
     display: inline !important;
@@ -109,13 +110,11 @@
 @media (min-width: 769px) and (max-width: 992px) {
   .NA-blog .rb-CoursePagination  .NA-articlesCards {
     justify-content: space-between;
+    gap: 0;
 }
   .NA-blog .rb-listing {
     width: 100%;
     height: 150px !important;
-  }
-  .rb-listing .NA-article-card-img {
-    width: 510px;
   }
   .NA-blog .rb-listing .NA-article-card-content .NA-span2 {
     font-size: 11px;
@@ -138,6 +137,7 @@
 
   .NA-blog .rb-CoursePagination .NA-articlesCards {
     justify-content: center;
+    gap: 0;
   }
   .NA-blog .NA-FilterBar .SHaaban-recent-post-body {
     flex-direction: column;
