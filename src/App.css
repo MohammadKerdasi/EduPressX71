@@ -1,87 +1,103 @@
 .app .rb-scroll-to-top-button {
-    position: fixed;
-    bottom: 10.493%;
-    right: 3.6042%; /* تعديل المسافة من اليمين */
-    background-color: black;
-    width: 60px;
-    height: 60px;
-    border: none;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    /* font-size: 28px; */
-    cursor: pointer;
-    transition: opacity 0.3s ease;
-    z-index: 90;
+  position: fixed;
+  bottom: 10.493%;
+  right: 3.6042%; /* تعديل المسافة من اليمين */
+  background-color: black;
+  width: 60px;
+  height: 60px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* font-size: 28px; */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  z-index: 90;
 }
 
-
-  .app .rb-scroll-to-top-button *{
+.app .rb-scroll-to-top-button * {
   color: var(--white);
   font-size: 28px;
-  }
-  .app .rb-scroll-to-top-button:hover{
-    opacity: 0.9;
-  }
-
- /* ::-webkit-scrollbar-thumb {
-    background: var(--grey);
-    border-radius: 25%;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 25%;
-    -ms-border-radius: 25%;
-    -o-border-radius: 25%;
-  
-    cursor: pointer;
-} */
-/* ::-webkit-scrollbar {
-    width: 7px;
-    background-color: var(--white-grey);  
-}  */
-
-
-/*media ------------------------------------------------------------------------------------ */
-
-
-
-
-@media only screen and (min-width: 992px) and (max-width:1366px){
-    .app .rb-scroll-to-top-button {
-        width: 48px;
-        height: 48px;
-    }
-
-      .app .rb-scroll-to-top-button *{
-      font-size: 25px;
-      }
-      .app .rb-scroll-to-top-button {
-        right: 2%;
-        bottom: 8.493%;}
 }
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .app .rb-scroll-to-top-button {
-        width: 38px;
-        height: 38px;
-        bottom: 8.493%;
-    }
-
-      .app .rb-scroll-to-top-button *{
-      font-size: 21px;
-      }
+.app .rb-scroll-to-top-button:hover {
+  opacity: 0.9;
 }
 
+@media only screen and (min-width: 992px) and (max-width: 1366px) {
+  .app .rb-scroll-to-top-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .app .rb-scroll-to-top-button * {
+    font-size: 25px;
+  }
+  .app .rb-scroll-to-top-button {
+    right: 2%;
+    bottom: 8.493%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .app .rb-scroll-to-top-button {
+    width: 38px;
+    height: 38px;
+    bottom: 8.493%;
+  }
+
+  .app .rb-scroll-to-top-button * {
+    font-size: 21px;
+  }
+}
 
 @media (max-width: 767px) {
-    .app .rb-scroll-to-top-button {
-        width: 35px;
-        height: 35px;
-        bottom: 6.493%;
-    }
+  .app .rb-scroll-to-top-button {
+    width: 35px;
+    height: 35px;
+    bottom: 6.493%;
+  }
 
-      .app .rb-scroll-to-top-button *{
-      font-size: 18px;
-      }
-      
+  .app .rb-scroll-to-top-button * {
+    font-size: 18px;
+  }
+}
+
+
+.bars {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  pointer-events: none;
+  width: 100%;
+}
+@keyframes show {
+  0% {
+    transform: translateX(-100%);
+  }
+ 100% {
+    transform: translateX(0);
+  }
+}
+@keyframes hide {
+  0% {
+    transform: translateX(0);
+  }
+ 100% {
+    transform: translateX(100%);
+  }
+}
+.bars > div {
+  background-color: var(--main-color);
+  transform: translateX(-100%);
+}
+.bars.show > div {
+  animation: show 0.2s both ease-in-out;
+}
+.bars.hide > div {
+  animation: hide 0.2s both ease-in-out;
 }

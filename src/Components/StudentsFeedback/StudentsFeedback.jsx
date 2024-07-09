@@ -40,7 +40,7 @@ export default function StudentsFeedback() {
   ]);
 
   return (
-    <section className="NA-feedbacks-Section NA-Project-Container block">
+    <section className="NA-feedbacks-Section NA-Project-Container">
       <Title
         header="students feedbacks"
         desc="what students say about us"

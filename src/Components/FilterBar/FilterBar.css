@@ -76,7 +76,7 @@
   .SHaaban-category-name,
   .SHaaban-recent-posts-area-title,
   .SHaaban-adding-style-for-recent-posts-paragraph {
-    font-size: 14px !important;
+    font-size: 17px !important;
   }
 }
 
@@ -86,25 +86,32 @@
   .SHaaban-category-name,
   .SHaaban-recent-posts-area-title,
   .SHaaban-adding-style-for-recent-posts-paragraph {
-    font-size: 12px !important;
+    font-size: 17px !important;
   }
 }
 
 @media (max-width: 1333px) and (min-width: 1241px) {
   .SHaaban-adding-style-for-recent-posts-paragraph {
-    font-size: 11px !important;
+    font-size: 17px !important;
   }
 }
 
-@media (max-width: 1241px) and (min-width: 1173px) {
+@media (max-width: 1241px) and (min-width: 1193px) {
   .SHaaban-adding-style-for-recent-posts-paragraph {
-    font-size: 11px !important;
+    font-size: 14px !important;
   }
 }
 
 @media (max-width: 1173px) and (min-width: 1110px) {
   .SHaaban-adding-style-for-recent-posts-paragraph {
     font-size: 10px !important;
+  }
+  .SHaaban-recent-post-body {
+    flex-direction: column;
+    align-items: baseline;
+  }
+  .SHaaban-adding-style-for-recent-posts-paragraph {
+    font-size: 13px !important;
   }
 }
 

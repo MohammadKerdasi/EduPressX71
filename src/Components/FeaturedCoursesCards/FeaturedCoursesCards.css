@@ -166,58 +166,58 @@
 @media (min-width: 769px) and (max-width: 992px) {
   .NA-featuredCards {
     justify-content: center;
-    gap: 30px;
+    gap: 0 40px;
   }
   .NA-feature-card {
     width:280px !important;
   }
   .NA-feature-card-content {
-    padding: 15px;
+    padding: 15px !important;
   }
     .NA-feature-card-content > div:nth-child(1) {
-      padding-bottom: 12px;
-      height: 120px;
+      padding-bottom: 12px !important;
+      height: 120px !important;
   }
   .NA-feature-card-content > div .NA-card-title {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .NA-feature-card-content > div .NA-card-desc {
-    margin-bottom: 10px;
-    font-size: 12px;
+    margin-bottom: 10px !important;
+    font-size: 12px !important;
   }
   .NA-card-desc span {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .NA-icon-desc {
-    font-size: 12px;
+    font-size: 12px !important;
   }
   .NA-card-price {
-    padding-top: 10px;
+    padding-top: 10px !important;
   }
   .NA-card-price span,
   .NA-card-price .discount,
   .NA-card-price .free,
   .NA-card-price a {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .NA-card-note {
     width: auto;
-    padding: 6px 8px;
-    font-size: 12px;
+    padding: 6px 8px !important;
+    font-size: 12px !important;
   }
 }
 
 /* small screen */
 @media (min-width: 577px) and (max-width: 768px) {
   .NA-featuredCards {
-    gap: 30px;
+    gap: 30px !important;
     justify-content: center;
   }
   .NA-feature-card {
     width: 280px !important;
   }
   .NA-feature-card-content {
-    padding: 15px;
+    padding: 15px !important;
   }
     .NA-feature-card-content > div:nth-child(1) {
       padding-bottom: 12px !important;
@@ -291,7 +291,7 @@
   }
   .NA-card-note {
     width: auto;
-    padding: 6px 8px;
-    font-size: 12px;
+    padding: 6px 8px !important;
+    font-size: 12px !important;
   }
 }

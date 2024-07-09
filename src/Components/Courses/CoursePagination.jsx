@@ -14,9 +14,18 @@ import {
 import ArticlesCards from "../ArticlesCards/ArticlesCards";
 import FilterBar from "../FilterBar/FilterBar";
 import { useMediaQuery } from 'react-responsive';
+// nahla
+import AOS from "aos";
+import "aos/dist/aos.css";
+// ----------------------------------------
 
 const CoursePagination = ({ searchBox, onSearchChange, items, title, x }) => {
- 
+ // nahla
+useEffect(() => {
+  AOS.init({ duration: 500 });
+}, []);
+// ----------------------------------------
+
   const isMobileView = useMediaQuery({ maxWidth: 767 });
   const [view, setView] = useState('NA-feature-card');
   const [currentPage, setCurrentPage] = useState(1);
@@ -49,7 +58,7 @@ const CoursePagination = ({ searchBox, onSearchChange, items, title, x }) => {
   const showSidebar = () => setSidebar(!sidebar);
 
   return (
-    <div className="rb-CoursePagination ">
+    <div className="rb-CoursePagination " data-aos="fade-right">
       <div className="rb-CoursePagination-head">
         <h1>{title}</h1>
         <div className="search-view">

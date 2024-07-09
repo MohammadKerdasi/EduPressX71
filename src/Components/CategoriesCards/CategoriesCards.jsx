@@ -83,7 +83,7 @@ export default function CategoriesCards() {
   ]);
 
   return (
-    <section className="NA-categoriesCards-Section NA-Project-Container block">
+    <section className="NA-categoriesCards-Section NA-Project-Container">
       <Title header="top categories" desc="Explore our Popular Categories" btn=" all categories " showBtn={true} link="/{}"/>
         <div className="NA-categoriesCards NA-flex">
             {CategoriesCards.map ((item) => {

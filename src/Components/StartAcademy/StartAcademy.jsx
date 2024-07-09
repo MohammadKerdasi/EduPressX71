@@ -7,7 +7,7 @@ import studentbanner1 from "./../../../public/assetsProject/imges/StartAcademy-e
 import studentbanner2 from "./../../../public/assetsProject/imges/StartAcademy-ed2 1.png"
 export default function StartAcademy () {
     return(
-        <div className="NA-StartAcademy-section NA-Project-Container block">
+        <div className="NA-StartAcademy-section NA-Project-Container">
             <div className="NA-StartAcademy NA-flex">
                 <div className="NA-StartAcademy-content NA-flex">
                     <img src={student} alt="student" />

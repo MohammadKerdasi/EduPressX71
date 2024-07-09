@@ -1,9 +1,21 @@
+// nahla
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+// ----------------------------------------
+
 import { Container } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import "./LoginRegister.css"
-import React from 'react';
+// import React from 'react';
+
  export default  function Login() {
+// nahla
+  useEffect(() => {
+    AOS.init({ duration: 500 });
+  }, []);
+// -------------------------------
   const [result, setResult] = React.useState("");
   const [result2, setResult2] = React.useState("");
 
@@ -56,7 +68,7 @@ import React from 'react';
  <>
  <section>
  <Container  className='d-flex   nz-c1'>
-    <Container className='nz-d1'>   
+    <Container className='nz-d1'  data-aos="zoom-out-right">  
       <Form className='nz-f1' onSubmit={onSubmit}>
     <h1 className='nz-h1'>login</h1>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -82,7 +94,7 @@ import React from 'react';
     </Form>
     
     </Container>
-    <Container className='nz-d1'>  
+    <Container className='nz-d1' data-aos="zoom-out-left">  
       <Form className='nz-f1' onSubmit={onSubmit2}>
     <h1 className='nz-h1'>Register</h1>
       <Form.Group className="mb-3" controlId="formBasicEmail">

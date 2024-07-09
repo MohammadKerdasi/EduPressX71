@@ -14,7 +14,7 @@ import banner9 from "./../../../public/assetsProject/imges/banner-a(9).png";
 
 export default function ExploreCourses() {
   return (
-    <div className="NA-Project-Container block">
+    <div className="NA-Project-Container">
       <div className="NA-ExploreCourses">
         <div className="NA-ExploreCourses-text">
           <p className="NA-ExploreCourses-subtitle">GET MORE POWER FROM</p>
