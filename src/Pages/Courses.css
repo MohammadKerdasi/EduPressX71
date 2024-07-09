@@ -1,17 +1,35 @@
-.Courses{
+.Courses {
   position: relative;
   display: flex;
   gap: 30px;
-  justify-content: space-between;
+  justify-content: center;
 }
-
-
-@media only screen and (min-width: 1201px) and (max-width: 1580px){
+/* .Courses .rb-CoursePagination .rb-listing .NA-feature-card-deatails{  */
+  /* padding-bottom: 67px !important;  */
+  /* } */
+/*  */
+@media only screen and (min-width: 1492px) and (max-width: 1743px){
+  .Courses{
+    gap: 27px;
+  }
+  .Courses .rb-CoursePagination .rb-listing .NA-card-title{
+    font-size: 22px;
+  }
+  .Courses .rb-CoursePagination .NA-featuredCards {
+    gap: 23px;
+}
+.Courses .rb-CoursePagination .rb-listing .NA-feature-card-deatails {
+  padding-bottom: 78px !important;
+}
+}
+@media only screen and (min-width: 1201px) and (max-width: 1491px){
   .Courses {
       /* flex-wrap: wrap; */
       gap: 16px;
-
   }
+  .Courses .rb-CoursePagination .NA-featuredCards {
+    gap: 11px;
+}
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .Courses {

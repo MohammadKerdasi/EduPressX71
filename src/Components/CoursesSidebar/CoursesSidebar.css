@@ -1,10 +1,10 @@
 .CoursesSidebar {
-    width: 28.931%;
+    /* width: 28.931%; */
     z-index: 999;
 }
 
 .CoursesSidebar .rb-flex-check {
-    width: 270px;
+    width: 178.6%;  /* 619.0625% */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -85,10 +85,7 @@
     /*transform: translateX(0);
     ransition: opacity 3s ease; */
     margin-left: 100px;
-    -webkit-transition: opacity 3s ease;
-    -moz-transition: opacity 3s ease;
-    -ms-transition: opacity 3s ease;
-    -o-transition: opacity 3s ease;
+
 }
 
 /* p{ */
@@ -133,7 +130,7 @@
 
     .CoursesSidebar {
         transition: all 1s ease;
-        width: 25%;
+        width: 22%;
         top: 0px;
         height: max-content;
         z-index: 50;
@@ -199,7 +196,7 @@
     }
 
     .CoursesSidebar .rb-flex-check {
-        width: 203px;
+        width:220px;
     }
 }
 
@@ -211,9 +208,15 @@
     .CoursesSidebar .rb-flex-check {
         width: 167px;
     }
+    .CoursesSidebar .rb-flex-check {
+        width: max-content;
+    }
 }
 
 @media (max-width: 767px) {
+    .CoursesSidebar .rb-flex-check {
+        width: max-content;
+    }
     .rb-filter-sidebar{
         font-size: 17px;
     }
@@ -238,11 +241,12 @@
 
     .CoursesSidebar {
         width: 38%;
+        height: max-content;
         padding: 26px 0 7px 21px;
     }
 }
 @media (max-width: 576px){
     .CoursesSidebar {
-        width: 60%;
+        width: 43%;
     }
 }

@@ -110,7 +110,7 @@
 .NA-card-price .free {
   color: var(--green);
 }
-.NA-feature-card .NA-card-price a {
+.NA-feature-card .NA-card-price a  {
   text-decoration: none;
   color: black;
   font-size: 18px;

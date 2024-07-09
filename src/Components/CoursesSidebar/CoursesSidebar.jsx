@@ -1,7 +1,3 @@
-// nahla
-import AOS from "aos";
-import "aos/dist/aos.css";
-// -------------------------------
 import React, { useState,useEffect } from 'react';
 import './CoursesSidebar.css'
 import './../../index.css'
@@ -9,11 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faStar, faFilter,faArrowRight } from '@fortawesome/free-solid-svg-icons';
 
 const CoursesSidebar = ({ filters, onFilterChange }) => {
-// nahla
-useEffect(() => {
-  AOS.init({ duration: 500 });
-}, []);
-// -------------------------------
+
   const [isSidebarVisible, setIsSidebarVisible] = useState(true);
   const [isButtonVisible, setIsButtonVisible] = useState(false);
 
@@ -65,8 +57,7 @@ useEffect(() => {
   };
 
   return (
-    <section data-aos="fade-left"
-    data-aos-duration="500" className="CoursesSidebar-courses">
+    <section className="CoursesSidebar-courses">
           {isButtonVisible && (
             <button
           className={`rb-filter-sidebar ${isSidebarVisible ? 'rb-filter-visible' : 'rb-filter-hidden'}`}
@@ -81,8 +72,8 @@ useEffect(() => {
 
 
       {isSidebarVisible && ( <div className={`CoursesSidebar `}>
-          <div >
-            <h4  className="rb-tit-sidebar">Course category</h4>
+          <div>
+            <h4 className="rb-tit-sidebar">Course category</h4>
             {['Commercial', 'Office', 'Shop', 'Educate', 'Academy', 'family', 'Studio', 'University'].map((category) => (
               <div key={category} className="rb-flex-check">
                 <div className="rb-flex-label">

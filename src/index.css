@@ -89,7 +89,7 @@ a {
     padding: 40px 16% 70px 16%;
   } 
   .ra-nav-Container{
-    padding: 10px 16% !important ;
+    padding: 0px 16% !important ;
    }
    .Mk-Container {
     padding: 50px 16% !important ;
@@ -121,7 +121,7 @@ a {
     padding: 40px 14% 70px 14%;
   }
   .ra-nav-Container {
-    padding: 10px 14% !important ;
+    padding: 0px 14% !important ;
   }
   .Mk-Container {
     padding: 50px 14% !important ;
@@ -137,7 +137,7 @@ a {
     padding: 20px 10% 50px 10%;
   }
   .ra-nav-Container {
-    padding: 5px 7% !important;
+    padding: 0px 10% !important;
   }
   .Mk-Container {
     padding: 50px 10% !important ;
@@ -155,7 +155,7 @@ a {
     padding: 0px 7% !important ;
   }
   .ra-nav-Container {
-    padding: 5px 7% !important;
+    padding: 0px 7% !important;
   }
   .Mk-Container {
     padding: 50px 7% !important ;
