@@ -68,7 +68,7 @@
 .NA-feature-card-deatails div {
   margin-right: 24px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
 }
 .NA-feature-card-deatails .NA-icon {
   color: var(--main-color);
